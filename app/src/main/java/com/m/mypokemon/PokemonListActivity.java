@@ -9,7 +9,8 @@ import android.widget.ListView;
 public class PokemonListActivity extends ListActivity {
     public static final String[][] POKEMON_LISTS = {
             {"Bulbasaur", "Charmander", "Squirtle"},
-            {"Moltres", "Zapdos", "Articuno"}};
+            {"Moltres", "Zapdos", "Articuno"},
+            {"Entei", "Raikou", "Suicune"}};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
