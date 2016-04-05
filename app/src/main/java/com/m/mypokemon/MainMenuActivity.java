@@ -1,5 +1,6 @@
 package com.m.mypokemon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,6 +20,9 @@ public class MainMenuActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(MainMenuActivity.this, PokemonListActivity.class);
+                intent.putExtra("position", position);
+                startActivity(intent);
             }
         };
 
