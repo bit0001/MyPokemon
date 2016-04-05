@@ -2,7 +2,7 @@
     <string name="app_name">Mi Pokemon</string>
     <string name="action_settings">Configuración</string>
     <string name="hello_world">Hola Mundo!</string>
-    <string-array name="main_menu">
+    <string-array name="main_menu_options">
         <item>Pokemon Iniciales</item>
         <item>Pájaros Lejendarios</item>
     </string-array>
