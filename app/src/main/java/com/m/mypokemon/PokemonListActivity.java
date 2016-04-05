@@ -6,9 +6,6 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-/**
- * Created by m on 4/5/2016.
- */
 public class PokemonListActivity extends ListActivity {
     public static final String[][] POKEMON_LISTS = {
             {"Bulbasaur", "Charmander", "Squirtle"},
