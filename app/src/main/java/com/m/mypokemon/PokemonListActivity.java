@@ -7,23 +7,34 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class PokemonListActivity extends ListActivity {
-    public static final String[][] POKEMON_LISTS = {
-            {"Bulbasaur", "Charmander", "Squirtle"},
-            {"Moltres", "Zapdos", "Articuno"},
-            {"Entei", "Raikou", "Suicune"}};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ListView pokemonList = getListView();
+        ListView pokemonListView = getListView();
         Intent intent = getIntent();
+        Pokemon[] pokemons;
 
-        ArrayAdapter<String> pokemonListAdapter = new ArrayAdapter<>(
+        switch (intent.getIntExtra("position", -1)) {
+            case 0:
+                pokemons = Pokemon.STARTERS;
+                break;
+            case 1:
+                pokemons = Pokemon.LEGENDARY_BIRDS;
+                break;
+            case 2:
+                pokemons = Pokemon.LEGENDARY_BEASTS;
+                break;
+            default:
+                pokemons = new Pokemon[0];
+        }
+
+        ArrayAdapter<Pokemon> pokemonListAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                POKEMON_LISTS[intent.getIntExtra("position", 0)]
+                pokemons
         );
 
-        pokemonList.setAdapter(pokemonListAdapter);
+        pokemonListView.setAdapter(pokemonListAdapter);
     }
 }

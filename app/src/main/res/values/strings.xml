@@ -7,4 +7,49 @@
         <item>Legendary Birds</item>
         <item>Legendary Beasts</item>
     </string-array>
+    <string name="bulbasaur">
+        Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
+        bulb on its back that is able to shoot seeds out of
+    </string>
+    <string name="charmander">
+        Charmander is a small, bipedal, dinosaur-like Pokémon. Most of its body is colored orange,
+        while its underbelly is a light yellow color.
+    </string>
+    <string name="squirtle">
+        Squirtle is a small, light-blue Pokémon with an appearance similar to that of a turtle.
+        Like turtles, Squirtle has a shell that covers its body with holes that allow its limbs,
+        tail, and head to be exposed.
+    </string>
+    <string name="moltres">
+        Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon
+        is injured, it is said to dip its body in the molten magma of a volcano to burn and heal
+        itself.
+    </string>
+    <string name="zapdos">
+        Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually
+        lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.
+    </string>
+    <string name="articuno">
+        Articuno is a large bird with blue plumage. Its colouring is darkest on its head crest and
+        long, streaming tail. Its body is coloured sky-blue, while growing lighter on its front,
+        and its chest is a lighter blue then anything. Its most distinctive trait is its large
+        wings, which are said to be made of ice.
+    </string>
+    <string name="entei">
+        Entei is a massive brown lion-like creature with a long, thick mane covering its neck. It
+        has gray plates surrounding the cape that makes it look as if smoke is coming out of a
+        crater on its back. Entei has white paws and black cuff-like bands on its legs; It has a
+        red face with a white plate that resembles a handlebar mustache on its face, and a
+        three-pointed yellow crest on its forehead.
+    </string>
+    <string name="raikou">
+        Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves
+        shuddering through the air and shake the ground as if lightning bolts had come crashing
+        down.
+    </string>
+    <string name="suicune">
+        Suicune is sky blue in color, with white rhombuses around the body and a white belly.
+        Suicune has an aquamarine crest on its head which is in the shape of a hexagram. Behind its
+        crest is a purple mane with supposedly thick, smooth fur.
+    </string>
 </resources>
