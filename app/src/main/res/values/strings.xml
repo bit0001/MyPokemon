@@ -35,4 +35,21 @@
         and its chest is a lighter blue then anything. Its most distinctive trait is its large
         wings, which are said to be made of ice.
     </string>
+    <string name="entei">
+        Entei is a massive brown lion-like creature with a long, thick mane covering its neck. It
+        has gray plates surrounding the cape that makes it look as if smoke is coming out of a
+        crater on its back. Entei has white paws and black cuff-like bands on its legs; It has a
+        red face with a white plate that resembles a handlebar mustache on its face, and a
+        three-pointed yellow crest on its forehead.
+    </string>
+    <string name="raikou">
+        Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves
+        shuddering through the air and shake the ground as if lightning bolts had come crashing
+        down.
+    </string>
+    <string name="suicune">
+        Suicune is sky blue in color, with white rhombuses around the body and a white belly.
+        Suicune has an aquamarine crest on its head which is in the shape of a hexagram. Behind its
+        crest is a purple mane with supposedly thick, smooth fur.
+    </string>
 </resources>
