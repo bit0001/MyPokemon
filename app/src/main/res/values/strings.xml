@@ -7,11 +7,32 @@
         <item>Legendary Birds</item>
         <item>Legendary Beasts</item>
     </string-array>
-    <string name="bulbasaur">Bulbasaur resembles a small, squatting dinosaur that walks on four
-        legs and has a large bulb on its back that is able to shoot seeds out of.</string>
-    <string name="charmander">Charmander is a small, bipedal, dinosaur-like Pokémon. Most of its
-        body is colored orange, while its underbelly is a light yellow color. </string>
-    <string name="squirtle">Squirtle is a small, light-blue Pokémon with an appearance similar
-        to that of a turtle. Like turtles, Squirtle has a shell that covers its body with holes
-        that allow its limbs, tail, and head to be exposed. </string>
+    <string name="bulbasaur">
+        Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
+        bulb on its back that is able to shoot seeds out of
+    </string>
+    <string name="charmander">
+        Charmander is a small, bipedal, dinosaur-like Pokémon. Most of its body is colored orange,
+        while its underbelly is a light yellow color.
+    </string>
+    <string name="squirtle">
+        Squirtle is a small, light-blue Pokémon with an appearance similar to that of a turtle.
+        Like turtles, Squirtle has a shell that covers its body with holes that allow its limbs,
+        tail, and head to be exposed.
+    </string>
+    <string name="moltres">
+        Moltres is a legendary bird Pokémon that has the ability to control fire. If this Pokémon
+        is injured, it is said to dip its body in the molten magma of a volcano to burn and heal
+        itself.
+    </string>
+    <string name="zapdos">
+        Zapdos is a legendary bird Pokémon that has the ability to control electricity. It usually
+        lives in thunderclouds. The Pokémon gains power if it is stricken by lightning bolts.
+    </string>
+    <string name="articuno">
+        Articuno is a large bird with blue plumage. Its colouring is darkest on its head crest and
+        long, streaming tail. Its body is coloured sky-blue, while growing lighter on its front,
+        and its chest is a lighter blue then anything. Its most distinctive trait is its large
+        wings, which are said to be made of ice.
+    </string>
 </resources>

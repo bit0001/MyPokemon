@@ -7,14 +7,32 @@
         <item>Pájaros Lejendarios</item>
         <item>Bestias Legendarias</item>
     </string-array>
-    <string name="bulbasaur">Su nombre es una combinación de las palabras bulb (bulbo en inglés)
-        y saur, que viene del griego sauros, que quiere decir reptil o lagarto y es una terminación
-        común en los nombres de los dinosaurios.</string>
-    <string name="charmander">Charmander es un pequeño lagarto bípedo. Sus características de
-        fuego son resaltadas por su color de piel anaranjado y su cola con la punta envuelta en
-        llamas. </string>
-    <string name="squirtle">Squirtle es una de las especies más difíciles de encontrar, habita
-        tanto aguas dulces como marinas, preferiblemente zonas bastante profundas. Son pequeñas
-        tortugas color celeste con caparazones color marrón; o rojas en algunos casos, con una
-        cola enrollada que los distingue.</string>
+    <string name="bulbasaur">
+        Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
+        griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
+        de los dinosaurios.</string>
+    <string name="charmander">
+        Charmander es un pequeño lagarto bípedo. Sus características de fuego son resaltadas por
+        su color de piel anaranjado y su cola con la punta envuelta en llamas.
+    </string>
+    <string name="squirtle">
+        Squirtle es una de las especies más difíciles de encontrar, habita tanto aguas dulces
+        como marinas, preferiblemente zonas bastante profundas. Son pequeñas tortugas color celeste
+        con caparazones color marrón; o rojas en algunos casos, con una cola enrollada que los
+        distingue.
+    </string>
+    <string name="moltres">
+        Moltres es un enorme pájaro de color amarillento, con una cresta llameante en la cabeza y
+        unas patas de color marrón rojizo. Sus alas y su cola están envueltas en llamas.
+    </string>
+    <string name="zapdos">
+        Zapdos es una de las tres aves legendarias de Kanto. Se trata de una enorme ave con un pico
+        largo y puntiagudo con un plumaje amarillo y erizado debido a los cúmulos de electricidad
+        que almacena en él.
+    </string>
+    <string name="articuno">
+        Articuno es un enorme pájaro de color azulado, con una cresta más oscura en la cabeza, del
+        mismo color que su larga cola en forma de cinta brillante. De su cuerpo despide una serie
+        de cristales helados que destellan con un hermoso brillo azulado.
+    </string>
 </resources>
