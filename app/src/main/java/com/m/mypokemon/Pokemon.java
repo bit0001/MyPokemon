@@ -45,4 +45,9 @@ public class Pokemon {
     public int getPhotoId() {
         return photoId;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
