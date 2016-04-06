@@ -7,10 +7,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class PokemonListActivity extends ListActivity {
-    public static final String[][] POKEMON_LISTS = {
-            {"Bulbasaur", "Charmander", "Squirtle"},
-            {"Moltres", "Zapdos", "Articuno"},
-            {"Entei", "Raikou", "Suicune"}};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +17,7 @@ public class PokemonListActivity extends ListActivity {
         ArrayAdapter<String> pokemonListAdapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
-                POKEMON_LISTS[intent.getIntExtra("position", 0)]
+                Pokemon.POKEMON_LISTS[intent.getIntExtra("position", 0)]
         );
 
         pokemonList.setAdapter(pokemonListAdapter);
