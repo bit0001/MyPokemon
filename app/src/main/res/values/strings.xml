@@ -52,4 +52,5 @@
         Suicune has an aquamarine crest on its head which is in the shape of a hexagram. Behind its
         crest is a purple mane with supposedly thick, smooth fur.
     </string>
+    <string name="title_activity_pokemon">PokemonActivity</string>
 </resources>
