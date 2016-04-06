@@ -18,6 +18,12 @@ public class Pokemon {
             new Pokemon("Articuno", R.string.articuno, R.drawable.articuno)
     };
 
+    public static final Pokemon[] LEGENDARY_BEASTS = {
+            new Pokemon("Entei", R.string.entei, R.drawable.entei),
+            new Pokemon("Raikou", R.string.raikou, R.drawable.raikou),
+            new Pokemon("Suicuine", R.string.suicune, R.drawable.suicune)
+    };
+
     private String name;
     private int informationId;
     private int photoId;
