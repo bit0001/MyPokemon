@@ -43,7 +43,6 @@ public class PokemonActivity extends AppCompatActivity {
 
         TextView information = (TextView) findViewById(R.id.information);
         information.setText(pokemon.getInformationId());
-
     }
 
 }
