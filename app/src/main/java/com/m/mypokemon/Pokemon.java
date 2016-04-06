@@ -12,6 +12,12 @@ public class Pokemon {
             new Pokemon("Squirtle", R.string.squirtle, R.drawable.squirtle)
     };
 
+    public static final Pokemon[] LEGENDARY_BIRDS = {
+            new Pokemon("Moltres", R.string.moltres, R.drawable.moltres),
+            new Pokemon("Zapdos", R.string.zapdos, R.drawable.zapdos),
+            new Pokemon("Articuno", R.string.articuno, R.drawable.articuno)
+    };
+
     private String name;
     private int informationId;
     private int photoId;
