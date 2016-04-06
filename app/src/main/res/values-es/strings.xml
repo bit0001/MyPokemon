@@ -11,6 +11,10 @@
         y saur, que viene del griego sauros, que quiere decir reptil o lagarto y es una terminación
         común en los nombres de los dinosaurios.</string>
     <string name="charmander">Charmander es un pequeño lagarto bípedo. Sus características de
-        fuegoson resaltadas por su color de piel anaranjado y su cola con la punta envuelta en
+        fuego son resaltadas por su color de piel anaranjado y su cola con la punta envuelta en
         llamas. </string>
+    <string name="squirtle">Squirtle es una de las especies más difíciles de encontrar, habita
+        tanto aguas dulces como marinas, preferiblemente zonas bastante profundas. Son pequeñas
+        tortugas color celeste con caparazones color marrón; o rojas en algunos casos, con una
+        cola enrollada que los distingue.</string>
 </resources>
