@@ -1,10 +1,6 @@
 package com.m.mypokemon;
 
 public class Pokemon {
-    public static final String[][] POKEMON_LISTS = {
-            {"Bulbasaur", "Charmander", "Squirtle"},
-            {"Moltres", "Zapdos", "Articuno"},
-            {"Entei", "Raikou", "Suicune"}};
 
     public static final Pokemon[] STARTERS = {
             new Pokemon("Bulbasaur", R.string.bulbasaur, R.drawable.bulbasaur),
