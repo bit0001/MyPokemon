@@ -6,13 +6,17 @@ public class Pokemon {
             {"Moltres", "Zapdos", "Articuno"},
             {"Entei", "Raikou", "Suicune"}};
 
+    public static final Pokemon[] STARTERS = {
+            new Pokemon("Bulbasaur", R.string.bulbasaur, R.drawable.bulbasaur)
+    };
+
     private String name;
-    private String information;
+    private int informationId;
     private int photoId;
 
-    public Pokemon(String name, String information, int photoId) {
+    public Pokemon(String name, int informationId, int photoId) {
         this.name = name;
-        this.information = information;
+        this.informationId = informationId;
         this.photoId = photoId;
     }
 
@@ -20,8 +24,8 @@ public class Pokemon {
         return name;
     }
 
-    public String getInformation() {
-        return information;
+    public int getInformationId() {
+        return informationId;
     }
 
     public int getPhotoId() {
