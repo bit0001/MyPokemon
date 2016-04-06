@@ -3,10 +3,13 @@ package com.m.mypokemon;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class PokemonListActivity extends ListActivity {
+
+    private static int pokemonListId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,8 +17,9 @@ public class PokemonListActivity extends ListActivity {
         ListView pokemonListView = getListView();
         Intent intent = getIntent();
         Pokemon[] pokemons;
+        pokemonListId = intent.getIntExtra("position", -1);
 
-        switch (intent.getIntExtra("position", -1)) {
+        switch (pokemonListId) {
             case 0:
                 pokemons = Pokemon.STARTERS;
                 break;
@@ -36,5 +40,13 @@ public class PokemonListActivity extends ListActivity {
         );
 
         pokemonListView.setAdapter(pokemonListAdapter);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        Intent intent = new Intent(this, PokemonActivity.class);
+        intent.putExtra(PokemonActivity.POKEMON_LIST, pokemonListId);
+        intent.putExtra(PokemonActivity.POKEMON_ID, (int) id);
+        startActivity(intent);
     }
 }
