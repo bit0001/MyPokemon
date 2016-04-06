@@ -7,7 +7,9 @@ public class Pokemon {
             {"Entei", "Raikou", "Suicune"}};
 
     public static final Pokemon[] STARTERS = {
-            new Pokemon("Bulbasaur", R.string.bulbasaur, R.drawable.bulbasaur)
+            new Pokemon("Bulbasaur", R.string.bulbasaur, R.drawable.bulbasaur),
+            new Pokemon("Charmander", R.string.charmander, R.drawable.charmander),
+            new Pokemon("Squirtle", R.string.squirtle, R.drawable.squirtle)
     };
 
     private String name;
