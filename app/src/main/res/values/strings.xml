@@ -3,9 +3,12 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello World!</string>
     <string-array name="main_menu_options">
-        <item>Starter Pokemon</item>
-        <item>Legendary Birds</item>
-        <item>Legendary Beasts</item>
+        <item>Pokémon</item>
+        <item>Pokémon Types</item>
+        <item>Poké Balls</item>
+        <item>Pokemon World</item>
+        <item>Badges</item>
+        <item>Video Games</item>
     </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large

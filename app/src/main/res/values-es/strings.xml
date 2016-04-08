@@ -3,9 +3,12 @@
     <string name="action_settings">Configuración</string>
     <string name="hello_world">Hola Mundo!</string>
     <string-array name="main_menu_options">
-        <item>Pokemon Iniciales</item>
-        <item>Pájaros Lejendarios</item>
-        <item>Bestias Legendarias</item>
+        <item>Pokémon</item>
+        <item>Tipos de Pokémon</item>
+        <item>Poké Bolas</item>
+        <item>Mundo Pokemon</item>
+        <item>Medallas</item>
+        <item>Videojuegos</item>
     </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
