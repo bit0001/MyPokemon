@@ -10,7 +10,7 @@
         <item>Badges</item>
         <item>Video Games</item>
     </string-array>
-    <string-array name="pokemon-classification">
+    <string-array name="pokemon_classification">
         <item>Starter</item>
         <item>Legendary</item>
         <item>Pseudo Legendary</item>
