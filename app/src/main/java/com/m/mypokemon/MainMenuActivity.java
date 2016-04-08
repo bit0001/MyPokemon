@@ -20,11 +20,14 @@ public class MainMenuActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position < 0) {
-                    Intent intent = new Intent(MainMenuActivity.this, PokemonListActivity.class);
-                    intent.putExtra("position", position);
-                    startActivity(intent);
+                switch (position) {
+                    case 0:
+                        Intent intent = new Intent(MainMenuActivity.this,
+                                PokemonClassificationActivity.class);
+                        startActivity(intent);
+                        break;
                 }
+
             }
         };
 
