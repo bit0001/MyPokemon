@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class PokemonListActivity extends ListActivity {
+public class PokemonClassificationActivity extends ListActivity {
 
     private static int pokemonListId;
 

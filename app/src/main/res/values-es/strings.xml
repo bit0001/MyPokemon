@@ -10,6 +10,16 @@
         <item>Medallas</item>
         <item>Videojuegos</item>
     </string-array>
+    <string-array name="pokemon-classification">
+        <item>Iniciales</item>
+        <item>Legendarios</item>
+        <item>Pseudo Legendarios</item>
+        <item>Semi-pseudo Legendarios</item>
+        <item>Míticos</item>
+        <item>Fósiles</item>
+        <item>Bebés</item>
+        <item>Mega</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
