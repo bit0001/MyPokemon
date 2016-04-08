@@ -25,7 +25,6 @@ public class MainMenuActivity extends AppCompatActivity {
                     intent.putExtra("position", position);
                     startActivity(intent);
                 }
-
             }
         };
 
