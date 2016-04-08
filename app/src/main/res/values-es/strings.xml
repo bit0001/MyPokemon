@@ -18,9 +18,7 @@
     </string>
     <string name="squirtle">
         Squirtle es una de las especies más difíciles de encontrar, habita tanto aguas dulces
-        como marinas, preferiblemente zonas bastante profundas. Son pequeñas tortugas color celeste
-        con caparazones color marrón; o rojas en algunos casos, con una cola enrollada que los
-        distingue.
+        como marinas, preferiblemente zonas bastante profundas.
     </string>
     <string name="moltres">
         Moltres es un enorme pájaro de color amarillento, con una cresta llameante en la cabeza y
@@ -46,6 +44,6 @@
     <string name="suicune">
         Suicune puede estar basado en una pantera negra, o tal vez en una onza, mejor conocido
         como leopardo de las nieves, aunque su estilizado cuerpo y velocidad hacen pensar que tal
-        vez esté basado en un guepardo. O quizás en un lobo ártico.
+        vez esté basado en un guepardo.
     </string>
 </resources>
