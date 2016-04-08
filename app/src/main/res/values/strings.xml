@@ -10,6 +10,16 @@
         <item>Badges</item>
         <item>Video Games</item>
     </string-array>
+    <string-array name="pokemon-classification">
+        <item>Starter</item>
+        <item>Legendary</item>
+        <item>Pseudo Legendary</item>
+        <item>Semi-pseudo Legendary</item>
+        <item>Mythical</item>
+        <item>Fossil</item>
+        <item>Baby</item>
+        <item>Mega</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
