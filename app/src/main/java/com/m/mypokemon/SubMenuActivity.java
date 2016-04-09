@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 public class SubMenuActivity extends ListActivity {
 
-    public static String SUB_MENU_OPTION = "position";
+    public static final String SUB_MENU_OPTION = "position";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
