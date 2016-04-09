@@ -20,14 +20,10 @@ public class MainMenuActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
-                        Intent intent = new Intent(MainMenuActivity.this,
-                                SubMenuActivity.class);
-                        startActivity(intent);
-                        break;
-                }
-
+                Intent intent = new Intent(MainMenuActivity.this,
+                        SubMenuActivity.class);
+                intent.putExtra(SubMenuActivity.SUB_MENU_OPTION, position);
+                startActivity(intent);
             }
         };
 
