@@ -56,6 +56,32 @@ public class SubSubMenuActivity extends ListActivity {
                         break;
                 }
                 break;
+            case VIDEO_GAMES:
+                PKMGeneration pkmGeneration =
+                        (PKMGeneration) intent.getSerializableExtra(SubMenuActivity.OPTION);
+                switch (pkmGeneration) {
+                    case FIRST:
+                        stringArrayId = R.array.first_generation;
+                        break;
+                    case SECOND:
+                        stringArrayId = R.array.second_generation;
+                        break;
+                    case THIRD:
+                        stringArrayId = R.array.third_generation;
+                        break;
+                    case FORTH:
+                        stringArrayId = R.array.forth_generation;
+                        break;
+                    case FIFTH:
+                        stringArrayId = R.array.fifth_generation;
+                        break;
+                    case SIXTH:
+                        stringArrayId = R.array.sixth_generation;
+                        break;
+                    case SEVENTH:
+                        stringArrayId = R.array.seventh_generation;
+                        break;
+                }
         }
 
         if (stringArrayId != null) {
