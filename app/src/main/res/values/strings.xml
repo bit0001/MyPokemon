@@ -93,6 +93,24 @@
         <item>Sixth Generation</item>
         <item>Seventh Generation</item>
     </string-array>
+    <string-array name="legendary_classification">
+        <item>The Legendary Birds</item>
+        <item>The Mew Duo</item>
+        <item>The Legendary Beasts</item>
+        <item>The Tower Duo</item>
+        <item>The Legendary Titans</item>
+        <item>The Eon Duo</item>
+        <item>The Weather Trio</item>
+        <item>The Lake Guardians</item>
+        <item>The Creation Trio</item>
+        <item>The Lunar Duo</item>
+        <item>The See Guardians</item>
+        <item>The Swords of Justice</item>
+        <item>The Forces of Nature</item>
+        <item>The Tao Trio</item>
+        <item>The Mortality Duo</item>
+        <item>Other</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of

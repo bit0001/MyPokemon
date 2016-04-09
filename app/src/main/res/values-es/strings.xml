@@ -85,6 +85,24 @@
         <item>Sexta Generación</item>
         <item>Séptima Generación</item>
     </string-array>
+    <string-array name="legendary_classification">
+        <item>Los Pájaros Legendarios</item>
+        <item>El Dúo Mew</item>
+        <item>Las Bestias Legendarias</item>
+        <item>El Dúo de la Torre</item>
+        <item>Los Titanes Legendarios</item>
+        <item>El Dúo de Eon</item>
+        <item>El Trío del Clima</item>
+        <item>Los Guardianes del Lago</item>
+        <item>El Trío de la Creación</item>
+        <item>El Dúo Lunar</item>
+        <item>Los Guardianes del Mar</item>
+        <item>Las Espada de la Justicia</item>
+        <item>Las Fuerzas de la Naturaleza</item>
+        <item>El Trío de Tao</item>
+        <item>El Dúo de la Mortalidad</item>
+        <item>Otros</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
