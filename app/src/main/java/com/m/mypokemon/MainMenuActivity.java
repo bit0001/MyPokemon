@@ -10,6 +10,9 @@ import android.widget.ListView;
 
 public class MainMenuActivity extends AppCompatActivity {
 
+    public static final String OPTION = "mainMenuOption";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainMenuActivity.this,
                         SubMenuActivity.class);
-                intent.putExtra(SubMenuActivity.SUB_MENU_OPTION, position);
+                intent.putExtra(OPTION, MainMenuOption.values()[position]);
                 startActivity(intent);
             }
         };
