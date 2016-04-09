@@ -1,5 +1,5 @@
 package com.m.mypokemon;
 
-public enum Leagues {
+public enum League {
     INDIGO, JOHTO, HOENN, SINNOH, UNOVA, KALOS
 }
