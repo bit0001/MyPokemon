@@ -68,6 +68,11 @@ public class SubMenuActivity extends ListActivity {
                 intent.putExtra(OPTION, league);
                 startActivity(intent);
                 break;
+            case VIDEO_GAMES:
+                PKMGeneration pkmGeneration = PKMGeneration.values()[position];
+                intent.putExtra(OPTION, pkmGeneration);
+                startActivity(intent);
+                break;
         }
     }
 }
