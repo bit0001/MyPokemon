@@ -36,6 +36,9 @@ public class SubSubMenuActivity extends ListActivity {
                     case INDIGO:
                         stringArrayId = R.array.indigo_badges;
                         break;
+                    case JOHTO:
+                        stringArrayId = R.array.johto_league;
+                        break;
                 }
                 break;
         }

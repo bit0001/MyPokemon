@@ -65,12 +65,8 @@ public class SubMenuActivity extends ListActivity {
                 break;
             case BADGES:
                 League league = League.values()[position];
-                switch (league) {
-                    case INDIGO:
-                        intent.putExtra(OPTION, league);
-                        startActivity(intent);
-                        break;
-                }
+                intent.putExtra(OPTION, league);
+                startActivity(intent);
                 break;
         }
     }
