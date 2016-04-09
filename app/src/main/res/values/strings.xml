@@ -204,6 +204,22 @@
         <item>Pokémon HeartGold</item>
         <item>Pokémon SoulSilver</item>
     </string-array>
+    <string-array name="fifth_generation">
+        <item>Pokémon Black</item>
+        <item>Pokémon White</item>
+        <item>Pokémon Black 2</item>
+        <item>Pokémon White 2</item>
+    </string-array>
+    <string-array name="sixth_generation">
+        <item>Pokémon X</item>
+        <item>Pokémon Y</item>
+        <item>Pokémon Omega Ruby</item>
+        <item>Pokémon Alpha Sapphire</item>
+    </string-array>
+    <string-array name="seventh_generation">
+        <item>Pokémon Sun</item>
+        <item>Pokémon Moon</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
