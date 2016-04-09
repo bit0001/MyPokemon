@@ -103,6 +103,16 @@
         <item>El Dúo de la Mortalidad</item>
         <item>Otros</item>
     </string-array>
+    <string-array name="indigo_badges">
+        <item>Medalla Roca</item>
+        <item>Medalla Cascada</item>
+        <item>Medalla Trueno</item>
+        <item>Medalla Arcoiris</item>
+        <item>Medalla Alma</item>
+        <item>Medalla Pantano</item>
+        <item>Medalla Volcán</item>
+        <item>Medalla Tierra</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres

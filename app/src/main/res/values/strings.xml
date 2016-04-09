@@ -111,6 +111,16 @@
         <item>The Mortality Duo</item>
         <item>Other</item>
     </string-array>
+    <string-array name="indigo_badges">
+        <item>Boulder Badge</item>
+        <item>Cascade Badge</item>
+        <item>Thunder Badge</item>
+        <item>Rainbow Badge</item>
+        <item>Soul Badge</item>
+        <item>Marsh Badge</item>
+        <item>Volcano Badge</item>
+        <item>Earth Badge</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
