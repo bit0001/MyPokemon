@@ -141,6 +141,16 @@
         <item>Mind Badge</item>
         <item>Rain Badge</item>
     </string-array>
+    <string-array name="sinnoh_league">
+        <item>Coal Badge</item>
+        <item>Forest Badge</item>
+        <item>Cobble Badge</item>
+        <item>Fen Badge</item>
+        <item>Relic Badge</item>
+        <item>Mine Badge</item>
+        <item>Icicle Badge</item>
+        <item>Beacon Badge</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of

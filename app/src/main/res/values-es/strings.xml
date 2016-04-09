@@ -133,6 +133,16 @@
         <item>Medalla Mente</item>
         <item>Medalla Lluvia</item>
     </string-array>
+    <string-array name="sinnoh_league">
+        <item>Medalla Lignito</item>
+        <item>Medalla Bosque</item>
+        <item>Medalla Adoquín</item>
+        <item>Medalla Ciénega</item>
+        <item>Medalla Reliquia</item>
+        <item>Medalla Mina</item>
+        <item>Medalla Carámbano</item>
+        <item>Medalla Faro</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
