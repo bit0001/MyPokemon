@@ -78,6 +78,7 @@
     </string-array>
     <string-array name="leagues">
         <item>Indigo League</item>
+        <item>Orange League</item>
         <item>Johto League</item>
         <item>Hoenn League</item>
         <item>Sinnoh League</item>
