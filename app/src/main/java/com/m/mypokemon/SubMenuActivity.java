@@ -58,6 +58,7 @@ public class SubMenuActivity extends ListActivity {
                         PKMClassification.values()[position];
                 switch (pokemonClassification) {
                     case STARTER:
+                    case LEGENDARY:
                         intent.putExtra(OPTION, pokemonClassification);
                         startActivity(intent);
                         break;

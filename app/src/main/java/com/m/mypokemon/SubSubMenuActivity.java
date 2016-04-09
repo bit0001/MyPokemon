@@ -26,6 +26,8 @@ public class SubSubMenuActivity extends ListActivity {
                     case STARTER:
                         stringArrayId = R.array.regions;
                         break;
+                    case LEGENDARY:
+                        stringArrayId = R.array.legendary_classification;
                 }
                 break;
         }
