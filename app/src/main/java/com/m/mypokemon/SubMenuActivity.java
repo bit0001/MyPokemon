@@ -9,7 +9,6 @@ import android.widget.ListView;
 
 public class SubMenuActivity extends ListActivity {
 
-    public static final String MAIN_MENU_OPTION = "mainMenuOption";
     public static MainMenuOption mainMenuOption;
 
     @Override
@@ -17,7 +16,7 @@ public class SubMenuActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         ListView subMenuOptions = getListView();
         Intent intent = getIntent();
-        mainMenuOption = (MainMenuOption) intent.getSerializableExtra(MAIN_MENU_OPTION);
+        mainMenuOption = (MainMenuOption) intent.getSerializableExtra(MainMenuActivity.MAIN_MENU_OPTION);
         Integer stringArrayId = null;
 
         switch (mainMenuOption){
@@ -50,7 +49,7 @@ public class SubMenuActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         Intent intent = new Intent(this, SubSubMenuActivity.class);
-        intent.putExtra(SubMenuActivity.MAIN_MENU_OPTION, mainMenuOption);
+        intent.putExtra(MainMenuActivity.MAIN_MENU_OPTION, mainMenuOption);
 
         switch (mainMenuOption) {
             case POKEMON:
