@@ -163,6 +163,16 @@
         <item>Toxic Badge</item>
         <item>Wave Badge</item>
     </string-array>
+    <string-array name="kalos_league">
+        <item>Bug Badge</item>
+        <item>Cliff Badge</item>
+        <item>Rumble Badge</item>
+        <item>Plant Badge</item>
+        <item>Voltage Badge</item>
+        <item>Fairy Badge</item>
+        <item>Psychic Badge</item>
+        <item>Iceberg Badge</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of

@@ -155,6 +155,16 @@
         <item>Medalla Ponzoña</item>
         <item>Medalla Ola</item>
     </string-array>
+    <string-array name="kalos_league">
+        <item>Medalla Insecto</item>
+        <item>Medalla Muro</item>
+        <item>Medalla Lid</item>
+        <item>Medalla Hoja</item>
+        <item>Medalla Voltaje</item>
+        <item>Medalla Hada</item>
+        <item>Medalla Psique</item>
+        <item>Medalla Iceberg</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
