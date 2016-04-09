@@ -113,7 +113,7 @@
         <item>Medalla Volcán</item>
         <item>Medalla Tierra</item>
     </string-array>
-    <string name="johto_league">
+    <string-array name="johto_league">
         <item>Medalla Céfiro</item>
         <item>Medalla Colmena</item>
         <item>Medalla Planicie</item>
@@ -122,7 +122,7 @@
         <item>Medalla Mineral</item>
         <item>Medalla Glaciar</item>
         <item>Medalla Dragón</item>
-    </string>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
