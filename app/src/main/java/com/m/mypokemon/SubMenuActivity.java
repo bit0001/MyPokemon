@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class SubMenuActivity extends ListActivity {
 
-    public static final String SUB_MENU_OPTION = "position";
+    public static final String MAIN_MENU_OPTION = "mainMenuOption";
     public static MainMenuOption mainMenuOption;
 
     @Override
@@ -17,7 +17,7 @@ public class SubMenuActivity extends ListActivity {
         super.onCreate(savedInstanceState);
         ListView subMenuOptions = getListView();
         Intent intent = getIntent();
-        mainMenuOption = (MainMenuOption) intent.getSerializableExtra(SUB_MENU_OPTION);
+        mainMenuOption = (MainMenuOption) intent.getSerializableExtra(MAIN_MENU_OPTION);
         Integer stringArrayId = null;
 
         switch (mainMenuOption){

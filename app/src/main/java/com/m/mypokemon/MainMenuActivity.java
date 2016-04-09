@@ -22,7 +22,7 @@ public class MainMenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MainMenuActivity.this,
                         SubMenuActivity.class);
-                intent.putExtra(SubMenuActivity.SUB_MENU_OPTION, MainMenuOption.values()[position]);
+                intent.putExtra(SubMenuActivity.MAIN_MENU_OPTION, MainMenuOption.values()[position]);
                 startActivity(intent);
             }
         };
