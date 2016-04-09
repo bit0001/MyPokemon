@@ -25,6 +25,9 @@ public class SubMenuActivity extends ListActivity {
             case 1:
                 stringArrayId = R.array.pokemon_types;
                 break;
+            case 2:
+                stringArrayId = R.array.poke_ball_types;
+                break;
         }
 
         if (stringArrayId != null) {
