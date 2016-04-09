@@ -182,6 +182,20 @@
         <item>Pokémon Plata</item>
         <item>Pokémon Cristal</item>
     </string-array>
+    <string-array name="third_generation">
+        <item>Pokémon Rubí</item>
+        <item>Pokémon Zafiro</item>
+        <item>Pokémon Rojo Fuego</item>
+        <item>Pokémon Verde Hoja</item>
+        <item>Pokémon Esmeralda</item>
+    </string-array>
+    <string-array name="forth_generation">
+        <item>Pokémon Diamante</item>
+        <item>Pokémon Perla</item>
+        <item>Pokémon Platino</item>
+        <item>Pokémon Oro HeartGold</item>
+        <item>Pokémon Plata SoulSilver</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres

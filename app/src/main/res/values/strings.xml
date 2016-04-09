@@ -190,6 +190,20 @@
         <item>Pokémon Silver</item>
         <item>Pokémon Crystal</item>
     </string-array>
+    <string-array name="third_generation">
+        <item>Pokémon Ruby</item>
+        <item>Pokémon Sapphire</item>
+        <item>Pokémon FireRed</item>
+        <item>Pokémon LeafGreen</item>
+        <item>Pokémon Emerald</item>
+    </string-array>
+    <string-array name="forth_generation">
+        <item>Pokémon Diamond</item>
+        <item>Pokémon Pearl</item>
+        <item>Pokémon Platinum</item>
+        <item>Pokémon HeartGold</item>
+        <item>Pokémon SoulSilver</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
