@@ -49,11 +49,21 @@ public class SubMenuActivity extends ListActivity {
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-        if (mainMenuOption == MainMenuOption.POKEMON || mainMenuOption == MainMenuOption.BADGES
-                || mainMenuOption == MainMenuOption.VIDEO_GAMES) {
-            Intent intent = new Intent(this, SubSubMenuActivity.class);
-            intent.putExtra(SubSubMenuActivity.SUB_SUB_MENU_OPTION, position);
-            startActivity(intent);
+        Intent intent = new Intent(this, SubSubMenuActivity.class);
+        intent.putExtra(SubMenuActivity.MAIN_MENU_OPTION, mainMenuOption);
+
+        switch (mainMenuOption) {
+            case POKEMON:
+                PokemonClassification pokemonClassification =
+                        PokemonClassification.values()[position];
+                switch (pokemonClassification) {
+                    case STARTER:
+                    case LEGENDARY:
+                        intent.putExtra(SubSubMenuActivity.SUB_MENU_OPTION, pokemonClassification);
+                        startActivity(intent);
+                        break;
+                }
+                break;
         }
     }
 }
