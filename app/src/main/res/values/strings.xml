@@ -185,6 +185,11 @@
         <item>Pokémon Blue</item>
         <item>Pokémon Yellow</item>
     </string-array>
+    <string-array name="second_generation">
+        <item>Pokémon Gold</item>
+        <item>Pokémon Silver</item>
+        <item>Pokémon Crystal</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of

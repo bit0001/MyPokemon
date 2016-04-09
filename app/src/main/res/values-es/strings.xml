@@ -177,6 +177,11 @@
         <item>Pokémon Azul</item>
         <item>Pokémon Amarillo</item>
     </string-array>
+    <string-array name="second_generation">
+        <item>Pokémon Oro</item>
+        <item>Pokémon Plata</item>
+        <item>Pokémon Cristal</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
