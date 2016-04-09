@@ -34,6 +34,9 @@ public class SubMenuActivity extends ListActivity {
             case 4:
                 stringArrayId = R.array.leagues;
                 break;
+            case 5:
+                stringArrayId = R.array.video_games;
+                break;
         }
 
         if (stringArrayId != null) {

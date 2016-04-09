@@ -84,6 +84,15 @@
         <item>Unova League</item>
         <item>Kalos League</item>
     </string-array>
+    <string-array name="video_games">
+        <item>First Generation</item>
+        <item>Second Generation</item>
+        <item>Third Generation</item>
+        <item>Fourth Generation</item>
+        <item>Fifth Generation</item>
+        <item>Sixth Generation</item>
+        <item>Seventh Generation</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
