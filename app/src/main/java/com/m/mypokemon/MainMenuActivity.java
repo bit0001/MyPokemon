@@ -23,7 +23,7 @@ public class MainMenuActivity extends AppCompatActivity {
                 switch (position) {
                     case 0:
                         Intent intent = new Intent(MainMenuActivity.this,
-                                PokemonClassificationActivity.class);
+                                SubMenuActivity.class);
                         startActivity(intent);
                         break;
                 }

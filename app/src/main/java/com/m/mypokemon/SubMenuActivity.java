@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class PokemonClassificationActivity extends ListActivity {
+public class SubMenuActivity extends ListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
