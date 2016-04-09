@@ -20,6 +20,26 @@
         <item>Bebés</item>
         <item>Mega</item>
     </string-array>
+    <string-array name="pokemon_types">
+        <item>Normal</item>
+        <item>Lucha</item>
+        <item>Volador</item>
+        <item>Veneno</item>
+        <item>Tierra</item>
+        <item>Roca</item>
+        <item>Bicho</item>
+        <item>Fantasma</item>
+        <item>Acero</item>
+        <item>Fuego</item>
+        <item>Agua</item>
+        <item>Planta</item>
+        <item>Eléctrico</item>
+        <item>Psíquico</item>
+        <item>Hielo</item>
+        <item>Dragón</item>
+        <item>Siniestro</item>
+        <item>Hada</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
