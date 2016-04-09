@@ -70,6 +70,7 @@
     </string-array>
     <string-array name="leagues">
         <item>Liga Indigo</item>
+        <item>Liga Naranja</item>
         <item>Liga Johto</item>
         <item>Liga Hoenn</item>
         <item>Liga Sinnoh</item>
@@ -113,6 +114,12 @@
         <item>Medalla Volcán</item>
         <item>Medalla Tierra</item>
     </string-array>
+    <string-array name="orange_league">
+        <item>Medalla Ojo de Coral</item>
+        <item>Medalla Rubí Marino</item>
+        <item>Medalla Púas</item>
+        <item>Medalla Estrella Jade</item>
+    </string-array>
     <string-array name="johto_league">
         <item>Medalla Céfiro</item>
         <item>Medalla Colmena</item>
@@ -132,6 +139,38 @@
         <item>Medalla Pluma</item>
         <item>Medalla Mente</item>
         <item>Medalla Lluvia</item>
+    </string-array>
+    <string-array name="sinnoh_league">
+        <item>Medalla Lignito</item>
+        <item>Medalla Bosque</item>
+        <item>Medalla Adoquín</item>
+        <item>Medalla Ciénega</item>
+        <item>Medalla Reliquia</item>
+        <item>Medalla Mina</item>
+        <item>Medalla Carámbano</item>
+        <item>Medalla Faro</item>
+    </string-array>
+    <string-array name="unova_league">
+        <item>Medalla Trío</item>
+        <item>Medalla Base</item>
+        <item>Medalla Élitro</item>
+        <item>Medalla Voltio</item>
+        <item>Medalla Temblor</item>
+        <item>Medalla Jet</item>
+        <item>Medalla Candelizo</item>
+        <item>Medalla Leyenda</item>
+        <item>Medalla Ponzoña</item>
+        <item>Medalla Ola</item>
+    </string-array>
+    <string-array name="kalos_league">
+        <item>Medalla Insecto</item>
+        <item>Medalla Muro</item>
+        <item>Medalla Lid</item>
+        <item>Medalla Hoja</item>
+        <item>Medalla Voltaje</item>
+        <item>Medalla Hada</item>
+        <item>Medalla Psique</item>
+        <item>Medalla Iceberg</item>
     </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del

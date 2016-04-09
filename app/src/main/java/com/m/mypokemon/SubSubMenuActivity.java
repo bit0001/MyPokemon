@@ -36,11 +36,24 @@ public class SubSubMenuActivity extends ListActivity {
                     case INDIGO:
                         stringArrayId = R.array.indigo_league;
                         break;
+                    case ORANGE:
+                        stringArrayId = R.array.orange_league;
+                        break;
                     case JOHTO:
                         stringArrayId = R.array.johto_league;
                         break;
                     case HOENN:
                         stringArrayId = R.array.hoenn_league;
+                        break;
+                    case SINNOH:
+                        stringArrayId = R.array.sinnoh_league;
+                        break;
+                    case UNOVA:
+                        stringArrayId = R.array.unova_league;
+                        break;
+                    case KALOS:
+                        stringArrayId = R.array.kalos_league;
+                        break;
                 }
                 break;
         }
