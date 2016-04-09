@@ -122,6 +122,12 @@
         <item>Volcano Badge</item>
         <item>Earth Badge</item>
     </string-array>
+    <string-array name="orange_league">
+        <item>Coral-Eye Badge</item>
+        <item>Sea Ruby Badge</item>
+        <item>Spike Shell Badge</item>
+        <item>Jade Star Badge</item>
+    </string-array>
     <string-array name="johto_league">
         <item>Zephyr Badge</item>
         <item>Hive Badge</item>

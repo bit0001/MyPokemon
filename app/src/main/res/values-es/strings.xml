@@ -114,6 +114,12 @@
         <item>Medalla Volcán</item>
         <item>Medalla Tierra</item>
     </string-array>
+    <string-array name="orange_league">
+        <item>Medalla Ojo de Coral</item>
+        <item>Medalla Rubí Marino</item>
+        <item>Medalla Púas</item>
+        <item>Medalla Estrella Jade</item>
+    </string-array>
     <string-array name="johto_league">
         <item>Medalla Céfiro</item>
         <item>Medalla Colmena</item>
