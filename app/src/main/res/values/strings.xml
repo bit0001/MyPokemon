@@ -131,6 +131,16 @@
         <item>Glacier Badge</item>
         <item>Rising Badge</item>
     </string-array>
+    <string-array name="hoenn_league">
+        <item>Stone Badge</item>
+        <item>Knuckle Badge</item>
+        <item>Dynamo Badge</item>
+        <item>Heat Badge</item>
+        <item>Balance Badge</item>
+        <item>Feather Badge</item>
+        <item>Mind Badge</item>
+        <item>Rain Badge</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of

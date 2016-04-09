@@ -123,6 +123,16 @@
         <item>Medalla Glaciar</item>
         <item>Medalla Dragón</item>
     </string-array>
+    <string-array name="hoenn_league">
+        <item>Medalla Piedra</item>
+        <item>Medalla Puño</item>
+        <item>Medalla Dinamo</item>
+        <item>Medalla Calor</item>
+        <item>Medalla Equilibrio</item>
+        <item>Medalla Pluma</item>
+        <item>Medalla Mente</item>
+        <item>Medalla Lluvia</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres
