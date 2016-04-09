@@ -34,11 +34,13 @@ public class SubSubMenuActivity extends ListActivity {
                 League league = (League) intent.getSerializableExtra(SubMenuActivity.OPTION);
                 switch (league) {
                     case INDIGO:
-                        stringArrayId = R.array.indigo_badges;
+                        stringArrayId = R.array.indigo_league;
                         break;
                     case JOHTO:
                         stringArrayId = R.array.johto_league;
                         break;
+                    case HOENN:
+                        stringArrayId = R.array.hoenn_league;
                 }
                 break;
         }

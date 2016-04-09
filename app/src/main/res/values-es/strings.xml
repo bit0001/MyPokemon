@@ -103,7 +103,7 @@
         <item>El Dúo de la Mortalidad</item>
         <item>Otros</item>
     </string-array>
-    <string-array name="indigo_badges">
+    <string-array name="indigo_league">
         <item>Medalla Roca</item>
         <item>Medalla Cascada</item>
         <item>Medalla Trueno</item>
@@ -122,6 +122,16 @@
         <item>Medalla Mineral</item>
         <item>Medalla Glaciar</item>
         <item>Medalla Dragón</item>
+    </string-array>
+    <string-array name="hoenn_league">
+        <item>Medalla Piedra</item>
+        <item>Medalla Puño</item>
+        <item>Medalla Dinamo</item>
+        <item>Medalla Calor</item>
+        <item>Medalla Equilibrio</item>
+        <item>Medalla Pluma</item>
+        <item>Medalla Mente</item>
+        <item>Medalla Lluvia</item>
     </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del

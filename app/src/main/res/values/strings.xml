@@ -111,7 +111,7 @@
         <item>The Mortality Duo</item>
         <item>Other</item>
     </string-array>
-    <string-array name="indigo_badges">
+    <string-array name="indigo_league">
         <item>Boulder Badge</item>
         <item>Cascade Badge</item>
         <item>Thunder Badge</item>
@@ -130,6 +130,16 @@
         <item>Mineral Badge</item>
         <item>Glacier Badge</item>
         <item>Rising Badge</item>
+    </string-array>
+    <string-array name="hoenn_league">
+        <item>Stone Badge</item>
+        <item>Knuckle Badge</item>
+        <item>Dynamo Badge</item>
+        <item>Heat Badge</item>
+        <item>Balance Badge</item>
+        <item>Feather Badge</item>
+        <item>Mind Badge</item>
+        <item>Rain Badge</item>
     </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
