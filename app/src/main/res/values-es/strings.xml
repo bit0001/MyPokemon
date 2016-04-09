@@ -143,6 +143,18 @@
         <item>Medalla Carámbano</item>
         <item>Medalla Faro</item>
     </string-array>
+    <string-array name="unova_league">
+        <item>Medalla Trío</item>
+        <item>Medalla Base</item>
+        <item>Medalla Élitro</item>
+        <item>Medalla Voltio</item>
+        <item>Medalla Temblor</item>
+        <item>Medalla Jet</item>
+        <item>Medalla Candelizo</item>
+        <item>Medalla Leyenda</item>
+        <item>Medalla Ponzoña</item>
+        <item>Medalla Ola</item>
+    </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
         griego sauros, que quiere decir reptil o lagarto y es una terminación común en los nombres

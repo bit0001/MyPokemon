@@ -151,6 +151,18 @@
         <item>Icicle Badge</item>
         <item>Beacon Badge</item>
     </string-array>
+    <string-array name="unova_league">
+        <item>Trio Badge</item>
+        <item>Basic Badge</item>
+        <item>Insect Badge</item>
+        <item>Bolt Badge</item>
+        <item>Quake Badge</item>
+        <item>Jet Badge</item>
+        <item>Freeze Badge</item>
+        <item>Legend Badge</item>
+        <item>Toxic Badge</item>
+        <item>Wave Badge</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
