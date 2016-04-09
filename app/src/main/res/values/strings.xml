@@ -40,6 +40,34 @@
         <item>Dark</item>
         <item>Fairy</item>
     </string-array>
+    <string-array name="poke_ball_types">
+        <item>Poké Ball</item>
+        <item>Great Ball</item>
+        <item>Ultra Ball</item>
+        <item>Master Ball</item>
+        <item>Safari Ball</item>
+        <item>Level Ball</item>
+        <item>Lure Ball</item>
+        <item>Moon Ball</item>
+        <item>Friend Ball</item>
+        <item>Love Ball</item>
+        <item>Heavy Ball</item>
+        <item>Fast Ball</item>
+        <item>Sport Ball</item>
+        <item>Premier Ball</item>
+        <item>Repeat Ball</item>
+        <item>Timer Ball</item>
+        <item>Nest Ball</item>
+        <item>Net Ball</item>
+        <item>Dive Ball</item>
+        <item>Luxury Ball</item>
+        <item>Heal Ball</item>
+        <item>Quick Ball</item>
+        <item>Dust Ball</item>
+        <item>Cherish Ball</item>
+        <item>Park Ball</item>
+        <item>Dream Ball</item>
+    </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
         bulb on its back that is able to shoot seeds out of
