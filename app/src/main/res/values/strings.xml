@@ -6,7 +6,7 @@
         <item>Pokémon</item>
         <item>Pokémon Types</item>
         <item>Poké Balls</item>
-        <item>Pokemon World</item>
+        <item>Regions</item>
         <item>Badges</item>
         <item>Video Games</item>
     </string-array>
@@ -67,6 +67,14 @@
         <item>Cherish Ball</item>
         <item>Park Ball</item>
         <item>Dream Ball</item>
+    </string-array>
+    <string-array name="regions">
+        <item>Kanto</item>
+        <item>Johto</item>
+        <item>Hoenn</item>
+        <item>Sinnoh</item>
+        <item>Unova</item>
+        <item>Kalos</item>
     </string-array>
     <string name="bulbasaur">
         Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large
