@@ -30,6 +30,14 @@ public class SubSubMenuActivity extends ListActivity {
                         stringArrayId = R.array.legendary_classification;
                 }
                 break;
+            case BADGES:
+                League league = (League) intent.getSerializableExtra(SubMenuActivity.OPTION);
+                switch (league) {
+                    case INDIGO:
+                        stringArrayId = R.array.indigo_badges;
+                        break;
+                }
+                break;
         }
 
         if (stringArrayId != null) {
