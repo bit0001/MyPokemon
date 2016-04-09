@@ -28,6 +28,8 @@ public class MainMenuActivity extends AppCompatActivity {
         };
 
         ListView listView = (ListView) findViewById(R.id.main_menu_options);
-        listView.setOnItemClickListener(itemClickListener);
+        if (listView != null) {
+            listView.setOnItemClickListener(itemClickListener);
+        }
     }
 }
