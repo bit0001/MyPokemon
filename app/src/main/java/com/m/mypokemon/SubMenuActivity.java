@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class SubMenuActivity extends ListActivity {
 
-    public static final String SUB_MENU_OPTION = "subMenuOption";
+    public static final String OPTION = "subMenuOption";
     public static MainMenuOption mainMenuOption;
 
     @Override
@@ -59,7 +59,7 @@ public class SubMenuActivity extends ListActivity {
                 switch (pokemonClassification) {
                     case STARTER:
                     case LEGENDARY:
-                        intent.putExtra(SUB_MENU_OPTION, pokemonClassification);
+                        intent.putExtra(OPTION, pokemonClassification);
                         startActivity(intent);
                         break;
                 }
