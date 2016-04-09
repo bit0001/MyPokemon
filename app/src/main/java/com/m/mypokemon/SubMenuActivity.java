@@ -18,33 +18,31 @@ public class SubMenuActivity extends ListActivity {
         int subMenuOption = intent.getIntExtra(SUB_MENU_OPTION, -1);
         Integer stringArrayId = null;
 
-        switch (subMenuOption){
-            case 0:
+        switch (MainMenuOption.values()[subMenuOption]){
+            case POKEMON:
                 stringArrayId = R.array.pokemon_classification;
                 break;
-            case 1:
+            case POKEMON_TYPES:
                 stringArrayId = R.array.pokemon_types;
                 break;
-            case 2:
+            case POKE_BALLS:
                 stringArrayId = R.array.poke_ball_types;
                 break;
-            case 3:
+            case REGIONS:
                 stringArrayId = R.array.regions;
                 break;
-            case 4:
+            case BADGES:
                 stringArrayId = R.array.leagues;
                 break;
-            case 5:
+            case VIDEO_GAMES:
                 stringArrayId = R.array.video_games;
                 break;
         }
 
-        if (stringArrayId != null) {
-            ArrayAdapter<CharSequence> pokemonClassificationStringArray = ArrayAdapter.
-                    createFromResource(this, stringArrayId,
-                            android.R.layout.simple_list_item_1);
-            pokemonListView.setAdapter(pokemonClassificationStringArray);
-        }
+        ArrayAdapter<CharSequence> pokemonClassificationStringArray = ArrayAdapter.
+                createFromResource(this, stringArrayId,
+                        android.R.layout.simple_list_item_1);
+        pokemonListView.setAdapter(pokemonClassificationStringArray);
     }
 
 }
