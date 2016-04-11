@@ -181,26 +181,26 @@
         <item>Iceberg Badge</item>
     </string-array>
     <string-array name="first_generation">
-        <item>Pokémon Red and Blue Versions</item>
-        <item>Pokémon Yellow Version</item>
+        <item>Pokémon Red and Blue</item>
+        <item>Pokémon Yellow</item>
     </string-array>
     <string-array name="second_generation">
-        <item>Pokémon Gold and Silver Versions</item>
-        <item>Pokémon Crystal Version</item>
+        <item>Pokémon Gold and Silver</item>
+        <item>Pokémon Crystal</item>
     </string-array>
     <string-array name="third_generation">
-        <item>Pokémon Ruby and Sapphire Versions</item>
-        <item>Pokémon FireRed and LeafGreen Versions</item>
-        <item>Pokémon Emerald Version</item>
+        <item>Pokémon Ruby and Sapphire</item>
+        <item>Pokémon FireRed and LeafGreen</item>
+        <item>Pokémon Emerald</item>
     </string-array>
     <string-array name="forth_generation">
-        <item>Pokémon Diamond and Pearl Versions</item>
-        <item>Pokémon Platinum Version</item>
-        <item>Pokémon HeartGold and SoulSilver Versions</item>
+        <item>Pokémon Diamond and Pearl</item>
+        <item>Pokémon Platinum</item>
+        <item>Pokémon HeartGold and SoulSilver</item>
     </string-array>
     <string-array name="fifth_generation">
-        <item>Pokémon Black and White Versions</item>
-        <item>Pokémon Black 2 and White 2 Versions</item>
+        <item>Pokémon Black and White</item>
+        <item>Pokémon Black 2 and White 2</item>
     </string-array>
     <string-array name="sixth_generation">
         <item>Pokémon X and Y</item>
