@@ -185,8 +185,7 @@
         <item>Pokémon Yellow Version</item>
     </string-array>
     <string-array name="second_generation">
-        <item>Pokémon Gold</item>
-        <item>Pokémon Silver</item>
+        <item>Pokémon Gold and Silver Versions</item>
         <item>Pokémon Crystal</item>
     </string-array>
     <string-array name="third_generation">
