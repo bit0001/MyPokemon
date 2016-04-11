@@ -186,14 +186,12 @@
     </string-array>
     <string-array name="second_generation">
         <item>Pokémon Gold and Silver Versions</item>
-        <item>Pokémon Crystal</item>
+        <item>Pokémon Crystal Version</item>
     </string-array>
     <string-array name="third_generation">
-        <item>Pokémon Ruby</item>
-        <item>Pokémon Sapphire</item>
-        <item>Pokémon FireRed</item>
-        <item>Pokémon LeafGreen</item>
-        <item>Pokémon Emerald</item>
+        <item>Pokémon Ruby and Sapphire Versions</item>
+        <item>Pokémon FireRed and LeafGreen Versions</item>
+        <item>Pokémon Emerald Version</item>
     </string-array>
     <string-array name="forth_generation">
         <item>Pokémon Diamond</item>
