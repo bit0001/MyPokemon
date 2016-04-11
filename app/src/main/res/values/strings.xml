@@ -203,10 +203,8 @@
         <item>Pokémon Black 2 and White 2 Versions</item>
     </string-array>
     <string-array name="sixth_generation">
-        <item>Pokémon X</item>
-        <item>Pokémon Y</item>
-        <item>Pokémon Omega Ruby</item>
-        <item>Pokémon Alpha Sapphire</item>
+        <item>Pokémon X and Y</item>
+        <item>Pokémon Omega Ruby and Alpha Sapphire</item>
     </string-array>
     <string-array name="seventh_generation">
         <item>Pokémon Sun</item>
