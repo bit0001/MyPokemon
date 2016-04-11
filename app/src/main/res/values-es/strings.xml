@@ -186,11 +186,9 @@
         <item>Pokémon Esmeralda</item>
     </string-array>
     <string-array name="forth_generation">
-        <item>Pokémon Diamante</item>
-        <item>Pokémon Perla</item>
+        <item>Pokémon Diamante y Perla</item>
         <item>Pokémon Platino</item>
-        <item>Pokémon Oro HeartGold</item>
-        <item>Pokémon Plata SoulSilver</item>
+        <item>Pokémon Oro HeartGold y Plata SoulSilver</item>
     </string-array>
     <string-array name="fifth_generation">
         <item>Pokémon Negro</item>
