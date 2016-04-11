@@ -173,44 +173,33 @@
         <item>Medalla Iceberg</item>
     </string-array>
     <string-array name="first_generation">
-        <item>Pokémon Rojo</item>
-        <item>Pokémon Azul</item>
+        <item>Pokémon Rojo y Azul</item>
         <item>Pokémon Amarillo</item>
     </string-array>
     <string-array name="second_generation">
-        <item>Pokémon Oro</item>
-        <item>Pokémon Plata</item>
+        <item>Pokémon Oro y Plata</item>
         <item>Pokémon Cristal</item>
     </string-array>
     <string-array name="third_generation">
-        <item>Pokémon Rubí</item>
-        <item>Pokémon Zafiro</item>
-        <item>Pokémon Rojo Fuego</item>
-        <item>Pokémon Verde Hoja</item>
+        <item>Pokémon Rubí Zafiro</item>
+        <item>Pokémon Rojo Fuego y Verde Hoja</item>
         <item>Pokémon Esmeralda</item>
     </string-array>
     <string-array name="forth_generation">
-        <item>Pokémon Diamante</item>
-        <item>Pokémon Perla</item>
+        <item>Pokémon Diamante y Perla</item>
         <item>Pokémon Platino</item>
-        <item>Pokémon Oro HeartGold</item>
-        <item>Pokémon Plata SoulSilver</item>
+        <item>Pokémon Oro HeartGold y Plata SoulSilver</item>
     </string-array>
     <string-array name="fifth_generation">
-        <item>Pokémon Negro</item>
-        <item>Pokémon Blanco</item>
-        <item>Pokémon Negro 2</item>
-        <item>Pokémon Blanco 2</item>
+        <item>Pokémon Negro y Blanco</item>
+        <item>Pokémon Negro 2 y Blanco 2</item>
     </string-array>
     <string-array name="sixth_generation">
-        <item>Pokémon X</item>
-        <item>Pokémon Y</item>
-        <item>Pokémon Rubí Omega</item>
-        <item>Pokémon Zafiro Alfa</item>
+        <item>Pokémon X y Y</item>
+        <item>Pokémon Rubí Omega y Zafiro Alfa</item>
     </string-array>
     <string-array name="seventh_generation">
-        <item>Pokémon Sol</item>
-        <item>Pokémon Luna</item>
+        <item>Pokémon Sol y Luna</item>
     </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
