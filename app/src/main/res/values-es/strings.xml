@@ -199,8 +199,7 @@
         <item>Pokémon Rubí Omega y Zafiro Alfa</item>
     </string-array>
     <string-array name="seventh_generation">
-        <item>Pokémon Sol</item>
-        <item>Pokémon Luna</item>
+        <item>Pokémon Sol y Luna</item>
     </string-array>
     <string name="bulbasaur">
         Su nombre es una combinación de las palabras bulb (bulbo en inglés) y saur, que viene del
