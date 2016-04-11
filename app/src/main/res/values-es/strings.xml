@@ -173,8 +173,7 @@
         <item>Medalla Iceberg</item>
     </string-array>
     <string-array name="first_generation">
-        <item>Pokémon Rojo</item>
-        <item>Pokémon Azul</item>
+        <item>Pokémon Rojo y Azul</item>
         <item>Pokémon Amarillo</item>
     </string-array>
     <string-array name="second_generation">

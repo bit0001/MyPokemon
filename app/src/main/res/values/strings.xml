@@ -181,9 +181,8 @@
         <item>Iceberg Badge</item>
     </string-array>
     <string-array name="first_generation">
-        <item>Pokémon Red</item>
-        <item>Pokémon Blue</item>
-        <item>Pokémon Yellow</item>
+        <item>Pokémon Red and Blue Versions</item>
+        <item>Pokémon Yellow Version</item>
     </string-array>
     <string-array name="second_generation">
         <item>Pokémon Gold</item>
