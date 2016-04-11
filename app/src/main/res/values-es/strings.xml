@@ -191,16 +191,12 @@
         <item>Pokémon Oro HeartGold y Plata SoulSilver</item>
     </string-array>
     <string-array name="fifth_generation">
-        <item>Pokémon Negro</item>
-        <item>Pokémon Blanco</item>
-        <item>Pokémon Negro 2</item>
-        <item>Pokémon Blanco 2</item>
+        <item>Pokémon Negro y Blanco</item>
+        <item>Pokémon Negro 2 y Blanco 2</item>
     </string-array>
     <string-array name="sixth_generation">
-        <item>Pokémon X</item>
-        <item>Pokémon Y</item>
-        <item>Pokémon Rubí Omega</item>
-        <item>Pokémon Zafiro Alfa</item>
+        <item>Pokémon X y Y</item>
+        <item>Pokémon Rubí Omega y Zafiro Alfa</item>
     </string-array>
     <string-array name="seventh_generation">
         <item>Pokémon Sol</item>
