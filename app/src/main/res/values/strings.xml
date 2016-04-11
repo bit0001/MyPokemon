@@ -199,10 +199,8 @@
         <item>Pokémon HeartGold and SoulSilver Versions</item>
     </string-array>
     <string-array name="fifth_generation">
-        <item>Pokémon Black</item>
-        <item>Pokémon White</item>
-        <item>Pokémon Black 2</item>
-        <item>Pokémon White 2</item>
+        <item>Pokémon Black and White Versions</item>
+        <item>Pokémon Black 2 and White 2 Versions</item>
     </string-array>
     <string-array name="sixth_generation">
         <item>Pokémon X</item>
