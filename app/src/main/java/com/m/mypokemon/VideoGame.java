@@ -15,6 +15,16 @@ public class VideoGame {
                     "Game Boy",
                     "Nintendo",
                     "September 28, 1998");
+    public static final VideoGame YELLOW = new VideoGame(
+                    new HashMap<String, Integer>() {
+                        {
+                            put("Yellow", R.drawable.yellow);
+                        }
+                    },
+                    "Game Freak",
+                    "Game Boy",
+                    "Nintendo",
+                    "October 18, 1999");
 
     private HashMap<String, Integer> coverIds;
     private String platform;
