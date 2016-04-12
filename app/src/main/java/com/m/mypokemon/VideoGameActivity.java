@@ -50,14 +50,13 @@ public class VideoGameActivity extends AppCompatActivity {
                 break;
         }
 
-        final VideoGame finalPkmVideoGame = videoGame;
+        final VideoGame finalVideoGame = videoGame;
         assert spinner != null;
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 version = spinner.getSelectedItem().toString();
-                nameTextView.setText(new StringBuilder("Pokémon ").append(version));
-                coverImageView.setImageResource(finalPkmVideoGame.getCoverIds().get(version));
+                populateVideoGameNameAndCover(finalVideoGame);
             }
 
             @Override
@@ -80,8 +79,7 @@ public class VideoGameActivity extends AppCompatActivity {
     private void populateView(VideoGame videoGame) {
         String[] versions = videoGame.getCoverIds().keySet().toArray(new String[videoGame.getCoverIds().size()]);
         version = versions[0];
-        nameTextView.setText(new StringBuilder("Pokémon ").append(version));
-        coverImageView.setImageResource(videoGame.getCoverIds().get(version));
+        populateVideoGameNameAndCover(videoGame);
 
         if (versions.length > 1) {
             ArrayAdapter<String> arrayAdapter =
@@ -97,6 +95,11 @@ public class VideoGameActivity extends AppCompatActivity {
         developerTextView.setText(videoGame.getDeveloper());
         publisherTextView.setText(videoGame.getPublisher());
         releaseTextView.setText(videoGame.getReleaseDate());
+    }
+
+    private void populateVideoGameNameAndCover(VideoGame videoGame) {
+        nameTextView.setText(new StringBuilder("Pokémon ").append(version));
+        coverImageView.setImageResource(videoGame.getCoverIds().get(version));
     }
 
     public void clickMethod(View view) {
