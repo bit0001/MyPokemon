@@ -30,18 +30,19 @@ public class VideoGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_game);
         Intent intent = getIntent();
         PKMGeneration generation = (PKMGeneration) intent.getSerializableExtra(GENERATION);
-        int pkmVideoGameOption = intent.getIntExtra(SubSubMenuActivity.OPTION, -1);
+        FirstGenerationVideoGame selectedVideoGame =
+                FirstGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
 
         getViewsOfActivity();
 
         switch (generation) {
             case FIRST:
-                switch (pkmVideoGameOption) {
-                    case 0:
+                switch (selectedVideoGame) {
+                    case RED_AND_BLUE:
                         videoGame = VideoGame.RED_AND_BLUE;
                         populateView(videoGame);
                         break;
-                    case 1:
+                    case YELLOW:
                         videoGame = VideoGame.YELLOW;
                         populateView(videoGame);
                         break;
@@ -99,4 +100,5 @@ public class VideoGameActivity extends AppCompatActivity {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(videoGame.getUrls().get(version)));
         startActivity(browserIntent);
     }
+
 }
