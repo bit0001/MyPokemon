@@ -54,6 +54,7 @@ public class VideoGameActivity extends AppCompatActivity {
                         videoGame = VideoGame.GOLD_AND_SILVER;
                         break;
                     case CRYSTAL:
+                        videoGame = VideoGame.CRYSTAL;
                         break;
                 }
                 break;

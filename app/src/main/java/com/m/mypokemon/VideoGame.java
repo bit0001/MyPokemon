@@ -1,5 +1,7 @@
 package com.m.mypokemon;
 
+import android.provider.MediaStore;
+
 import java.util.HashMap;
 
 public class VideoGame {
@@ -54,6 +56,22 @@ public class VideoGame {
                     "Game Boy Color",
                     "Nintendo",
                     "October 15, 2000");
+
+    public static final VideoGame CRYSTAL = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Crystal", R.drawable.crystal);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Crystal", "http://www.amazon.com/Pokemon-Crystal-Version-Game-Boy-Color/dp/B00005LBHM/ref=sr_1_1?ie=UTF8&qid=1460499797&sr=8-1&keywords=pokemon+crystal");
+                }
+            },
+            "Game Freak",
+            "Game Boy Color",
+            "Nintendo",
+            "July 30, 2001");
 
     private HashMap<String, Integer> coverIds;
     private HashMap<String, String> urls;
