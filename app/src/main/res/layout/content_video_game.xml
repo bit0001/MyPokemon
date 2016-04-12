@@ -17,11 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:text="Pokémon Red"/>
 
     <ImageView
-        android:paddingRight="40dp"
-        android:paddingLeft="40dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -39,7 +41,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Platform:\t\t\t\t\t\t\t"/>
+            android:textStyle="bold"
+            android:text="Platform:   "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +56,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developer:\t\t\t\t\t\t"/>
+            android:textStyle="bold"
+            android:text="Developer:   "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +71,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Publisher:\t\t\t\t\t\t"/>
+            android:textStyle="bold"
+            android:text="Publisher:   "/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +86,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Release (USA):\t\t"/>
+            android:textStyle="bold"
+            android:text="Release (USA):   "/>
         
         <TextView
             android:layout_width="wrap_content"
