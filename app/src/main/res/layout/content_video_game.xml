@@ -30,8 +30,7 @@
     <Spinner
         android:id="@+id/video_game"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:entries="@array/countries"/>
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Platform:\t\t\t\t\t\t\t"/>
+            android:text="Platform:\t\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developer:\t\t\t\t\t\t"/>
+            android:text="Developer:\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Publisher:\t\t\t\t\t\t"/>
+            android:text="Publisher:\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -82,18 +81,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Release date "/>
-        
-        <Spinner
-            android:id="@+id/countries"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/countries"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=":\t "/>
+            android:text="Release (USA):\t\t"/>
         
         <TextView
             android:layout_width="wrap_content"
