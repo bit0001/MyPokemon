@@ -9,6 +9,8 @@ import android.view.View;
 
 public class VideoGameActivity extends AppCompatActivity {
 
+    public static final String GENERATION = "pokemonGeneration";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

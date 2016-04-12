@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 public class SubSubMenuActivity extends ListActivity {
 
+    public static final String OPTION = "subSubMenuOption";
     public static MainMenuOption mainMenuOption;
     private static Intent intent;
 
@@ -132,6 +133,8 @@ public class SubSubMenuActivity extends ListActivity {
                         (PKMGeneration) intent.getSerializableExtra(SubMenuActivity.OPTION);
                 Intent videoGameIntent = new Intent(SubSubMenuActivity.this,
                         VideoGameActivity.class);
+                videoGameIntent.putExtra(VideoGameActivity.GENERATION, pkmGeneration);
+                videoGameIntent.putExtra(OPTION, position);
                 startActivity(videoGameIntent);
         }
     }
