@@ -1,6 +1,7 @@
 package com.m.mypokemon;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
@@ -19,6 +20,15 @@ import org.w3c.dom.Text;
 public class VideoGameActivity extends AppCompatActivity {
 
     public static final String GENERATION = "pokemonGeneration";
+    private String pokemonVersion;
+    private TextView videoGameName;
+    private ImageView videoGameCover;
+    private Spinner videoGameSpinner;
+    private TextView platform;
+    private TextView developer;
+    private TextView publisher;
+    private TextView release;
+    private VideoGame pkmVideoGame;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,32 +37,25 @@ public class VideoGameActivity extends AppCompatActivity {
         Intent intent = getIntent();
         PKMGeneration pkmGeneration = (PKMGeneration) intent.getSerializableExtra(GENERATION);
         int pkmVideoGameOption = intent.getIntExtra(SubSubMenuActivity.OPTION, -1);
-        VideoGame pkmVideoGame = null;
 
-        final TextView videoGameName = (TextView) findViewById(R.id.video_game_name);
-        final ImageView videoGameCover = (ImageView) findViewById(R.id.video_game_cover);
-        final Spinner videoGameSpinner = (Spinner) findViewById(R.id.video_game_version);
-        TextView platform = (TextView) findViewById(R.id.video_game_platform);
-        TextView developer = (TextView) findViewById(R.id.video_game_developer);
-        TextView publisher = (TextView) findViewById(R.id.video_game_publisher);
-        TextView release = (TextView) findViewById(R.id.video_game_release);
-
+        videoGameName = (TextView) findViewById(R.id.video_game_name);
+        videoGameCover = (ImageView) findViewById(R.id.video_game_cover);
+        videoGameSpinner = (Spinner) findViewById(R.id.video_game_version);
+        platform = (TextView) findViewById(R.id.video_game_platform);
+        developer = (TextView) findViewById(R.id.video_game_developer);
+        publisher = (TextView) findViewById(R.id.video_game_publisher);
+        release = (TextView) findViewById(R.id.video_game_release);
 
         switch (pkmGeneration) {
             case FIRST:
                 switch (pkmVideoGameOption) {
                     case 0:
                         pkmVideoGame = VideoGame.RED_AND_BLUE;
-                        String[] videoGameVersions = (String[]) pkmVideoGame.getCoverIds().keySet().toArray(new String[pkmVideoGame.getCoverIds().size()]);
-                        videoGameName.setText("Pokémon " + videoGameVersions[0]);
-                        videoGameCover.setImageResource(pkmVideoGame.getCoverIds().get(videoGameVersions[0]));
-                        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, videoGameVersions);
-                        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                        videoGameSpinner.setAdapter(spinnerArrayAdapter);
-                        platform.setText(pkmVideoGame.getPlatform());
-                        developer.setText(pkmVideoGame.getDeveloper());
-                        publisher.setText(pkmVideoGame.getPublisher());
-                        release.setText(pkmVideoGame.getReleaseDate());
+                        populateView(pkmVideoGame);
+                        break;
+                    case 1:
+                        pkmVideoGame = VideoGame.YELLOW;
+                        populateView(pkmVideoGame);
                         break;
                 }
                 break;
@@ -63,7 +66,7 @@ public class VideoGameActivity extends AppCompatActivity {
         videoGameSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String pokemonVersion = videoGameSpinner.getSelectedItem().toString();
+                pokemonVersion = videoGameSpinner.getSelectedItem().toString();
                 videoGameName.setText("Pokémon " + pokemonVersion);
                 videoGameCover.setImageResource(finalPkmVideoGame.getCoverIds().get(pokemonVersion));
             }
@@ -73,7 +76,29 @@ public class VideoGameActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
+    private void populateView(VideoGame videoGame) {
+        String[] videoGameVersions = videoGame.getCoverIds().keySet().toArray(new String[videoGame.getCoverIds().size()]);
+        if (videoGameVersions.length > 1) {
+            videoGameSpinner.setVisibility(View.VISIBLE);
+        } else {
+            videoGameSpinner.setVisibility(View.GONE);
+        }
+        pokemonVersion = videoGameVersions[0];
+        videoGameName.setText("Pokémon " + pokemonVersion);
+        videoGameCover.setImageResource(videoGame.getCoverIds().get(videoGameVersions[0]));
+        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, videoGameVersions);
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        videoGameSpinner.setAdapter(spinnerArrayAdapter);
+        platform.setText(videoGame.getPlatform());
+        developer.setText(videoGame.getDeveloper());
+        publisher.setText(videoGame.getPublisher());
+        release.setText(videoGame.getReleaseDate());
+    }
+
+    public void clickMethod(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(pkmVideoGame.getUrls().get(pokemonVersion)));
+        startActivity(browserIntent);
+    }
 }
