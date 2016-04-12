@@ -22,8 +22,12 @@
         <activity
             android:name=".PokemonActivity"
             android:label="@string/title_activity_pokemon"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SubSubMenuActivity" />
+        <activity
+            android:name=".VideoGameActivity"
+            android:label="@string/title_activity_video_game"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
