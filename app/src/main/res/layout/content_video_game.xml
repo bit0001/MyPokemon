@@ -29,27 +29,23 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"/>
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
         <Spinner
             android:id="@+id/video_game_version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"/>
-
         <Button
             android:layout_width="99dp"
             android:layout_height="44dp"
             android:background="@drawable/buy_on_amazon"
             android:layout_alignParentRight="true"/>
-
     </RelativeLayout>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +101,6 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:text="Release (USA):   "/>
-        
         <TextView
             android:id="@+id/video_game_release"
             android:layout_width="wrap_content"
