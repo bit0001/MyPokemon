@@ -37,6 +37,24 @@ public class VideoGame {
                     "Nintendo",
                     "October 18, 1999");
 
+    public static final VideoGame GOLD_AND_SILVER = new VideoGame(
+                    new HashMap<String, Integer>() {
+                        {
+                            put("Gold", R.drawable.gold);
+                            put("Silver", R.drawable.silver);
+                        }
+                    },
+                    new HashMap<String, String>(){
+                        {
+                            put("Gold", "http://www.amazon.com/Pokemon-Gold-Game-Boy-Color/dp/B00004TEYR/ref=sr_1_1?ie=UTF8&qid=1460499464&sr=8-1&keywords=pokemon+gold");
+                            put("Silver", "http://www.amazon.com/Pokemon-Silver-Version-Game-Boy-Color/dp/B00004TCT3/ref=sr_1_1?ie=UTF8&qid=1460499522&sr=8-1&keywords=pokemon+silver");
+                        }
+                    },
+                    "Game Freak",
+                    "Game Boy Color",
+                    "Nintendo",
+                    "October 15, 2000");
+
     private HashMap<String, Integer> coverIds;
     private HashMap<String, String> urls;
     private String platform;

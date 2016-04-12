@@ -30,25 +30,36 @@ public class VideoGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_game);
         Intent intent = getIntent();
         PKMGeneration generation = (PKMGeneration) intent.getSerializableExtra(GENERATION);
-        FirstGenerationVideoGame selectedVideoGame =
-                FirstGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
 
         getViewsOfActivity();
 
         switch (generation) {
             case FIRST:
-                switch (selectedVideoGame) {
+                FirstGenerationVideoGame firstGenerationVideoGame =
+                        FirstGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
+                switch (firstGenerationVideoGame) {
                     case RED_AND_BLUE:
                         videoGame = VideoGame.RED_AND_BLUE;
-                        populateView(videoGame);
                         break;
                     case YELLOW:
                         videoGame = VideoGame.YELLOW;
-                        populateView(videoGame);
+                        break;
+                }
+                break;
+            case SECOND:
+                SecondGenerationVideoGame secondGenerationGame =
+                        SecondGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
+                switch (secondGenerationGame) {
+                    case GOLD_AND_SILVER:
+                        videoGame = VideoGame.GOLD_AND_SILVER;
+                        break;
+                    case CRYSTAL:
                         break;
                 }
                 break;
         }
+
+        populateView(videoGame);
 
         final VideoGame finalVideoGame = videoGame;
         assert spinner != null;
