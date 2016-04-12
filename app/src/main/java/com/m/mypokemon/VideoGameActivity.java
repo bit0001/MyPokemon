@@ -56,7 +56,7 @@ public class VideoGameActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 version = spinner.getSelectedItem().toString();
-                nameTextView.setText("Pokémon " + version);
+                nameTextView.setText(new StringBuilder("Pokémon ").append(version));
                 coverImageView.setImageResource(finalPkmVideoGame.getCoverIds().get(version));
             }
 
@@ -78,18 +78,21 @@ public class VideoGameActivity extends AppCompatActivity {
     }
 
     private void populateView(VideoGame videoGame) {
-        String[] videoGameVersions = videoGame.getCoverIds().keySet().toArray(new String[videoGame.getCoverIds().size()]);
-        if (videoGameVersions.length > 1) {
+        String[] versions = videoGame.getCoverIds().keySet().toArray(new String[videoGame.getCoverIds().size()]);
+        version = versions[0];
+        nameTextView.setText(new StringBuilder("Pokémon ").append(version));
+        coverImageView.setImageResource(videoGame.getCoverIds().get(version));
+
+        if (versions.length > 1) {
+            ArrayAdapter<String> arrayAdapter =
+                    new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, versions);
+            arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinner.setAdapter(arrayAdapter);
             spinner.setVisibility(View.VISIBLE);
         } else {
             spinner.setVisibility(View.GONE);
         }
-        version = videoGameVersions[0];
-        nameTextView.setText("Pokémon " + version);
-        coverImageView.setImageResource(videoGame.getCoverIds().get(videoGameVersions[0]));
-        ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, videoGameVersions);
-        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(spinnerArrayAdapter);
+
         platformTextView.setText(videoGame.getPlatform());
         developerTextView.setText(videoGame.getDeveloper());
         publisherTextView.setText(videoGame.getPublisher());
