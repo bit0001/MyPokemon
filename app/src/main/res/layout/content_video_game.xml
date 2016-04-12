@@ -39,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Platform:\t\t\t\t\t\t"/>
+            android:text="Platform:\t\t\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Developer:\t\t\t\t\t"/>
+            android:text="Developer:\t\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Publisher:\t\t\t\t\t"/>
+            android:text="Publisher:\t\t\t\t\t\t"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
