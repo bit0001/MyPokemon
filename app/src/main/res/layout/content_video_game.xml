@@ -14,25 +14,27 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/video_game_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textSize="25dp"
-        android:textStyle="bold"
-        android:text="Pokémon Red"/>
+        android:textStyle="bold"/>
 
     <ImageView
+        android:id="@+id/video_game_cover"
         android:paddingRight="30dp"
         android:paddingLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/red"/>
+        android:adjustViewBounds="true"/>
 
     <Spinner
-        android:id="@+id/video_game"
+        android:id="@+id/video_game_version"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,9 +46,9 @@
             android:textStyle="bold"
             android:text="Platform:   "/>
         <TextView
+            android:id="@+id/video_game_platform"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GameBoy"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
@@ -59,9 +61,9 @@
             android:textStyle="bold"
             android:text="Developer:   "/>
         <TextView
+            android:id="@+id/video_game_developer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Game Freak"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
@@ -74,9 +76,9 @@
             android:textStyle="bold"
             android:text="Publisher:   "/>
         <TextView
+            android:id="@+id/video_game_publisher"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nintendo"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <LinearLayout
@@ -90,9 +92,9 @@
             android:text="Release (USA):   "/>
         
         <TextView
+            android:id="@+id/video_game_release"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="September 28, 1998"/>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
 </LinearLayout>
