@@ -3,25 +3,35 @@ package com.m.mypokemon;
 import java.util.HashMap;
 
 public class VideoGame {
-    private int coverId;
+
+    public static final VideoGame RED_AND_BLUE = new VideoGame(
+                    new HashMap<String, Integer>(){
+                        {
+                            put("Red", R.drawable.red);
+                            put("Blue", R.drawable.blue);
+                        }
+                    },
+                    "Game Freak",
+                    "Game Boy",
+                    "Nintendo",
+                    "September 28, 1998");
+
+    private HashMap<String, Integer> coverIds;
     private String platform;
     private String developer;
     private String publisher;
     private String releaseDate;
-    private HashMap<String, Integer> versions;
 
-    public VideoGame(int coverId, String developer, String platform, String publisher,
-                     String releaseDate, HashMap<String, Integer> versions) {
-        this.coverId = coverId;
+    public VideoGame(HashMap<String, Integer> coverIds, String developer, String platform, String publisher, String releaseDate) {
+        this.coverIds = coverIds;
         this.developer = developer;
         this.platform = platform;
         this.publisher = publisher;
         this.releaseDate = releaseDate;
-        this.versions = versions;
     }
 
-    public int getCoverId() {
-        return coverId;
+    public HashMap<String, Integer> getCoverIds() {
+        return coverIds;
     }
 
     public String getDeveloper() {
@@ -40,7 +50,4 @@ public class VideoGame {
         return releaseDate;
     }
 
-    public HashMap<String, Integer> getVersions() {
-        return versions;
-    }
 }
