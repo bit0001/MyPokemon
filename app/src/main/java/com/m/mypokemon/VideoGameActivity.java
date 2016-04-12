@@ -29,18 +29,12 @@ public class VideoGameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_game);
         Intent intent = getIntent();
-        PKMGeneration pkmGeneration = (PKMGeneration) intent.getSerializableExtra(GENERATION);
+        PKMGeneration generation = (PKMGeneration) intent.getSerializableExtra(GENERATION);
         int pkmVideoGameOption = intent.getIntExtra(SubSubMenuActivity.OPTION, -1);
 
-        nameTextView = (TextView) findViewById(R.id.video_game_name);
-        coverImageView = (ImageView) findViewById(R.id.video_game_cover);
-        spinner = (Spinner) findViewById(R.id.video_game_version);
-        platformTextView = (TextView) findViewById(R.id.video_game_platform);
-        developerTextView = (TextView) findViewById(R.id.video_game_developer);
-        publisherTextView = (TextView) findViewById(R.id.video_game_publisher);
-        releaseTextView = (TextView) findViewById(R.id.video_game_release);
+        getViewsOfActivity();
 
-        switch (pkmGeneration) {
+        switch (generation) {
             case FIRST:
                 switch (pkmVideoGameOption) {
                     case 0:
@@ -70,6 +64,16 @@ public class VideoGameActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void getViewsOfActivity() {
+        nameTextView = (TextView) findViewById(R.id.video_game_name);
+        coverImageView = (ImageView) findViewById(R.id.video_game_cover);
+        spinner = (Spinner) findViewById(R.id.video_game_version);
+        platformTextView = (TextView) findViewById(R.id.video_game_platform);
+        developerTextView = (TextView) findViewById(R.id.video_game_developer);
+        publisherTextView = (TextView) findViewById(R.id.video_game_publisher);
+        releaseTextView = (TextView) findViewById(R.id.video_game_release);
     }
 
     private void populateView(VideoGame videoGame) {
