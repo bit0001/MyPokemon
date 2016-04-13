@@ -74,6 +74,21 @@ public class VideoGameActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case FORTH:
+                FourthGenerationVideoGame fourthGenerationVideoGame =
+                        FourthGenerationVideoGame.values()[position];
+                switch (fourthGenerationVideoGame) {
+                    case DIAMOND_AND_PEARL:
+                        videoGame = VideoGame.DIAMOND_AND_PEARL;
+                        break;
+                    case PLATINUM:
+                        videoGame = VideoGame.PLATINUM;
+                        break;
+                    case HEARTGOLD_AND_SOULSILVER:
+                        videoGame = VideoGame.HEARTGOLD_AND_SOULSILVER;
+                        break;
+                }
+                break;
         }
 
         populateView(videoGame);
