@@ -89,6 +89,18 @@ public class VideoGameActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case FIFTH:
+                FifthGenerationVideoGame fifthGenerationVideoGame =
+                        FifthGenerationVideoGame.values()[position];
+                switch (fifthGenerationVideoGame) {
+                    case BLACK_AND_WHITE:
+                        videoGame = VideoGame.BLACK_AND_WHITE;
+                        break;
+                    case BLACK2_AND_WHITE2:
+                        videoGame = VideoGame.BLACK2_AND_WHITE2;
+                        break;
+                }
+                break;
         }
 
         populateView(videoGame);
