@@ -101,6 +101,27 @@ public class VideoGameActivity extends AppCompatActivity {
                         break;
                 }
                 break;
+            case SIXTH:
+                SixthGenerationVideoGame sixthGenerationVideoGame =
+                        SixthGenerationVideoGame.values()[position];
+                switch (sixthGenerationVideoGame) {
+                    case X_AND_Y:
+                        videoGame = VideoGame.X_AND_Y;
+                        break;
+                    case OMEGA_RUBY_AND_ALPHA_SAPPHIRE:
+                        videoGame = VideoGame.OMEGA_RUBY_AND_ALPHA_SAPPHIRE;
+                        break;
+                }
+                break;
+            case SEVENTH:
+                SeventhGenerationVideoGame seventhGenerationVideoGame =
+                        SeventhGenerationVideoGame.values()[position];
+                switch (seventhGenerationVideoGame) {
+                    case SUN_AND_MOON:
+                        videoGame = VideoGame.SUN_AND_MOON;
+                        break;
+                }
+                break;
         }
 
         populateView(videoGame);
