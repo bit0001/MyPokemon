@@ -126,6 +126,58 @@ public class VideoGame {
             "Nintendo",
             "May 1, 2005");
 
+    public static final VideoGame DIAMOND_AND_PEARL = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Diamond", R.drawable.diamond);
+                    put("Pearl", R.drawable.pearl);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Diamond", "http://www.amazon.com/Pokemon-Diamond-Version-nintendo-ds/dp/B000MJB0H6/ref=sr_1_1?ie=UTF8&qid=1460510643&sr=8-1&keywords=pokemon+diamond");
+                    put("Pearl", "http://www.amazon.com/Pokemon-Pearl-Version-nintendo-ds/dp/B000MJB1WU/ref=sr_1_1?ie=UTF8&qid=1460510653&sr=8-1&keywords=pokemon+perl");
+                }
+            },
+            "Game Freak",
+            "Nintendo DS",
+            "Nintendo",
+            "April 22, 2007");
+
+    public static final VideoGame PLATINUM = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Platinum", R.drawable.platinum);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Platinum", "http://www.amazon.com/Pokemon-Platinum-Nintendo-DS/dp/B001O1OBFY/ref=sr_1_1?ie=UTF8&qid=1460510847&sr=8-1&keywords=pokemon+platinum");
+                }
+            },
+            "Game Freak",
+            "Nintendo DS",
+            "Nintendo",
+            "March 22, 2009");
+
+    public static final VideoGame HEARTGOLD_AND_SOULSILVER = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("HeartGold", R.drawable.heart_gold);
+                    put("SoulSilver", R.drawable.soul_silver);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("HeartGold", "http://www.amazon.com/Pokemon-HeartGold-Version-Nintendo-DS/dp/B0038MVFYC/ref=sr_1_1?ie=UTF8&qid=1460511097&sr=8-1&keywords=pokemon+heart+gold");
+                    put("SoulSilver", "http://www.amazon.com/Pokemon-SoulSilver-Version-Nintendo-DS/dp/B0038MTE7C/ref=sr_1_1?ie=UTF8&qid=1460511117&sr=8-1&keywords=pokemon+soul+silver");
+                }
+            },
+            "Game Freak",
+            "Nintendo DS",
+            "Nintendo",
+            "March 14, 2010");
+
     private HashMap<String, Integer> coverIds;
     private HashMap<String, String> urls;
     private String platform;
