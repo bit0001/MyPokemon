@@ -30,13 +30,14 @@ public class VideoGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_video_game);
         Intent intent = getIntent();
         PKMGeneration generation = (PKMGeneration) intent.getSerializableExtra(GENERATION);
+        int position = intent.getIntExtra(SubSubMenuActivity.OPTION, -1);
 
         getViewsOfActivity();
 
         switch (generation) {
             case FIRST:
                 FirstGenerationVideoGame firstGenerationVideoGame =
-                        FirstGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
+                        FirstGenerationVideoGame.values()[position];
                 switch (firstGenerationVideoGame) {
                     case RED_AND_BLUE:
                         videoGame = VideoGame.RED_AND_BLUE;
@@ -48,13 +49,28 @@ public class VideoGameActivity extends AppCompatActivity {
                 break;
             case SECOND:
                 SecondGenerationVideoGame secondGenerationGame =
-                        SecondGenerationVideoGame.values()[intent.getIntExtra(SubSubMenuActivity.OPTION, -1)];
+                        SecondGenerationVideoGame.values()[position];
                 switch (secondGenerationGame) {
                     case GOLD_AND_SILVER:
                         videoGame = VideoGame.GOLD_AND_SILVER;
                         break;
                     case CRYSTAL:
                         videoGame = VideoGame.CRYSTAL;
+                        break;
+                }
+                break;
+            case THIRD:
+                ThirdGenerationVideoGame thirdGenerationVideoGame =
+                        ThirdGenerationVideoGame.values()[position];
+                switch (thirdGenerationVideoGame) {
+                    case RUBY_AND_SAPPHIRE:
+                        videoGame = VideoGame.RUBY_AND_SAPPHIRE;
+                        break;
+                    case FIRERED_AND_LEAFGREEN:
+                        videoGame = VideoGame.FIRERED_AND_LEAFGREEN;
+                        break;
+                    case EMERALD:
+                        videoGame = VideoGame.EMERALD;
                         break;
                 }
                 break;
