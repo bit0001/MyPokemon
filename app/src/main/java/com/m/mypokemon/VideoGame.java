@@ -214,6 +214,60 @@ public class VideoGame {
             "Nintendo",
             "October 7, 2012");
 
+    public static final VideoGame X_AND_Y = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("X", R.drawable.x);
+                    put("Y", R.drawable.y);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("X", "http://www.amazon.com/Pok%C3%A9mon-X-nintendo-3ds/dp/B0053B5RGI/ref=sr_1_1?s=videogames&ie=UTF8&qid=1460512827&sr=1-1&keywords=pokemon+x");
+                    put("Y", "http://www.amazon.com/Pok%C3%A9mon-Y-nintendo-3ds/dp/B0053B66KE/ref=sr_1_1?s=videogames&ie=UTF8&qid=1460512838&sr=1-1&keywords=pokemon+y");
+                }
+            },
+            "Game Freak",
+            "Nintendo 3DS",
+            "Nintendo",
+            "October 12, 2013");
+
+    public static final VideoGame OMEGA_RUBY_AND_ALPHA_SAPPHIRE = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Omega Ruby", R.drawable.omega_ruby);
+                    put("Alpha Sapphire", R.drawable.alpha_sapphire);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Omega Ruby", "http://www.amazon.com/Pok%C3%A9mon-Omega-Ruby-Nintendo-3DS/dp/B00KI2OZ9M/ref=sr_1_1?s=videogames&ie=UTF8&qid=1460513066&sr=1-1&keywords=pokemon+omega+ruby");
+                    put("Alpha Sapphire", "http://www.amazon.com/Pok%C3%A9mon-Alpha-Sapphire-Nintendo-3DS/dp/B00K848IH0/ref=sr_1_2?s=videogames&ie=UTF8&qid=1460513087&sr=1-2&keywords=pokemon+omega+ruby");
+                }
+            },
+            "Game Freak",
+            "Nintendo 3DS",
+            "Nintendo",
+            "November 21, 2014");
+
+    public static final VideoGame SUN_AND_MOON = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Sun", R.drawable.sun);
+                    put("Moon", R.drawable.moon);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Sun", "http://www.amazon.com/Pokemon-Sun-Nintendo-3DS/dp/B01C93CWU6/ref=sr_1_1?s=videogames&ie=UTF8&qid=1460513218&sr=1-1&keywords=pokemon+sun");
+                    put("Moon", "http://www.amazon.com/Pokemon-Sun-Nintendo-3DS/dp/B01C93CWU6/ref=sr_1_1?s=videogames&ie=UTF8&qid=1460513218&sr=1-1&keywords=pokemon+sun");
+                }
+            },
+            "Game Freak",
+            "Nintendo 3DS",
+            "Nintendo",
+            "Holiday 2016");
+
     private HashMap<String, Integer> coverIds;
     private HashMap<String, String> urls;
     private String platform;
