@@ -31,99 +31,9 @@ public class VideoGameActivity extends AppCompatActivity {
         Intent intent = getIntent();
         PKMGeneration generation = (PKMGeneration) intent.getSerializableExtra(GENERATION);
         int position = intent.getIntExtra(SubSubMenuActivity.OPTION, -1);
+        videoGame = getVideoGame(generation, position);
 
         getViewsOfActivity();
-
-        switch (generation) {
-            case FIRST:
-                FirstGenerationVideoGame firstGenerationVideoGame =
-                        FirstGenerationVideoGame.values()[position];
-                switch (firstGenerationVideoGame) {
-                    case RED_AND_BLUE:
-                        videoGame = VideoGame.RED_AND_BLUE;
-                        break;
-                    case YELLOW:
-                        videoGame = VideoGame.YELLOW;
-                        break;
-                }
-                break;
-            case SECOND:
-                SecondGenerationVideoGame secondGenerationGame =
-                        SecondGenerationVideoGame.values()[position];
-                switch (secondGenerationGame) {
-                    case GOLD_AND_SILVER:
-                        videoGame = VideoGame.GOLD_AND_SILVER;
-                        break;
-                    case CRYSTAL:
-                        videoGame = VideoGame.CRYSTAL;
-                        break;
-                }
-                break;
-            case THIRD:
-                ThirdGenerationVideoGame thirdGenerationVideoGame =
-                        ThirdGenerationVideoGame.values()[position];
-                switch (thirdGenerationVideoGame) {
-                    case RUBY_AND_SAPPHIRE:
-                        videoGame = VideoGame.RUBY_AND_SAPPHIRE;
-                        break;
-                    case FIRERED_AND_LEAFGREEN:
-                        videoGame = VideoGame.FIRERED_AND_LEAFGREEN;
-                        break;
-                    case EMERALD:
-                        videoGame = VideoGame.EMERALD;
-                        break;
-                }
-                break;
-            case FORTH:
-                FourthGenerationVideoGame fourthGenerationVideoGame =
-                        FourthGenerationVideoGame.values()[position];
-                switch (fourthGenerationVideoGame) {
-                    case DIAMOND_AND_PEARL:
-                        videoGame = VideoGame.DIAMOND_AND_PEARL;
-                        break;
-                    case PLATINUM:
-                        videoGame = VideoGame.PLATINUM;
-                        break;
-                    case HEARTGOLD_AND_SOULSILVER:
-                        videoGame = VideoGame.HEARTGOLD_AND_SOULSILVER;
-                        break;
-                }
-                break;
-            case FIFTH:
-                FifthGenerationVideoGame fifthGenerationVideoGame =
-                        FifthGenerationVideoGame.values()[position];
-                switch (fifthGenerationVideoGame) {
-                    case BLACK_AND_WHITE:
-                        videoGame = VideoGame.BLACK_AND_WHITE;
-                        break;
-                    case BLACK2_AND_WHITE2:
-                        videoGame = VideoGame.BLACK2_AND_WHITE2;
-                        break;
-                }
-                break;
-            case SIXTH:
-                SixthGenerationVideoGame sixthGenerationVideoGame =
-                        SixthGenerationVideoGame.values()[position];
-                switch (sixthGenerationVideoGame) {
-                    case X_AND_Y:
-                        videoGame = VideoGame.X_AND_Y;
-                        break;
-                    case OMEGA_RUBY_AND_ALPHA_SAPPHIRE:
-                        videoGame = VideoGame.OMEGA_RUBY_AND_ALPHA_SAPPHIRE;
-                        break;
-                }
-                break;
-            case SEVENTH:
-                SeventhGenerationVideoGame seventhGenerationVideoGame =
-                        SeventhGenerationVideoGame.values()[position];
-                switch (seventhGenerationVideoGame) {
-                    case SUN_AND_MOON:
-                        videoGame = VideoGame.SUN_AND_MOON;
-                        break;
-                }
-                break;
-        }
-
         populateView(videoGame);
 
         final VideoGame finalVideoGame = videoGame;
@@ -140,6 +50,77 @@ public class VideoGameActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    private VideoGame getVideoGame(PKMGeneration generation, int position) {
+        switch (generation) {
+            case FIRST:
+                FirstGenerationVideoGame firstGenerationVideoGame =
+                        FirstGenerationVideoGame.values()[position];
+                switch (firstGenerationVideoGame) {
+                    case RED_AND_BLUE:
+                        return VideoGame.RED_AND_BLUE;
+                    case YELLOW:
+                        return VideoGame.YELLOW;
+                }
+            case SECOND:
+                SecondGenerationVideoGame secondGenerationGame =
+                        SecondGenerationVideoGame.values()[position];
+                switch (secondGenerationGame) {
+                    case GOLD_AND_SILVER:
+                        return VideoGame.GOLD_AND_SILVER;
+                    case CRYSTAL:
+                        return VideoGame.CRYSTAL;
+                }
+            case THIRD:
+                ThirdGenerationVideoGame thirdGenerationVideoGame =
+                        ThirdGenerationVideoGame.values()[position];
+                switch (thirdGenerationVideoGame) {
+                    case RUBY_AND_SAPPHIRE:
+                        return VideoGame.RUBY_AND_SAPPHIRE;
+                    case FIRERED_AND_LEAFGREEN:
+                        return VideoGame.FIRERED_AND_LEAFGREEN;
+                    case EMERALD:
+                        return VideoGame.EMERALD;
+                }
+            case FORTH:
+                FourthGenerationVideoGame fourthGenerationVideoGame =
+                        FourthGenerationVideoGame.values()[position];
+                switch (fourthGenerationVideoGame) {
+                    case DIAMOND_AND_PEARL:
+                        return VideoGame.DIAMOND_AND_PEARL;
+                    case PLATINUM:
+                        return VideoGame.PLATINUM;
+                    case HEARTGOLD_AND_SOULSILVER:
+                        return VideoGame.HEARTGOLD_AND_SOULSILVER;
+                }
+            case FIFTH:
+                FifthGenerationVideoGame fifthGenerationVideoGame =
+                        FifthGenerationVideoGame.values()[position];
+                switch (fifthGenerationVideoGame) {
+                    case BLACK_AND_WHITE:
+                        return VideoGame.BLACK_AND_WHITE;
+                    case BLACK2_AND_WHITE2:
+                        return VideoGame.BLACK2_AND_WHITE2;
+                }
+            case SIXTH:
+                SixthGenerationVideoGame sixthGenerationVideoGame =
+                        SixthGenerationVideoGame.values()[position];
+                switch (sixthGenerationVideoGame) {
+                    case X_AND_Y:
+                        return VideoGame.X_AND_Y;
+                    case OMEGA_RUBY_AND_ALPHA_SAPPHIRE:
+                        return VideoGame.OMEGA_RUBY_AND_ALPHA_SAPPHIRE;
+                }
+            case SEVENTH:
+                SeventhGenerationVideoGame seventhGenerationVideoGame =
+                        SeventhGenerationVideoGame.values()[position];
+                switch (seventhGenerationVideoGame) {
+                    case SUN_AND_MOON:
+                        return VideoGame.SUN_AND_MOON;
+                }
+        }
+        return null;
     }
 
     private void getViewsOfActivity() {
