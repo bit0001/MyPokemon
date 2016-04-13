@@ -3,18 +3,21 @@ package com.m.mypokemon;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class SubSubMenuActivity extends ListActivity {
 
+    public static final String OPTION = "subSubMenuOption";
     public static MainMenuOption mainMenuOption;
+    private static Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ListView subSubMenuOptions = getListView();
-        Intent intent = getIntent();
+        intent = getIntent();
         mainMenuOption = (MainMenuOption) intent.getSerializableExtra(MainMenuActivity.OPTION);
         Integer stringArrayId = null;
 
@@ -28,6 +31,7 @@ public class SubSubMenuActivity extends ListActivity {
                         break;
                     case LEGENDARY:
                         stringArrayId = R.array.legendary_classification;
+                        break;
                 }
                 break;
             case BADGES:
@@ -92,4 +96,46 @@ public class SubSubMenuActivity extends ListActivity {
         }
     }
 
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        switch (mainMenuOption) {
+            case POKEMON:
+                PKMClassification pkmClassification =
+                        (PKMClassification) intent.getSerializableExtra(SubMenuActivity.OPTION);
+                switch (pkmClassification) {
+                    case STARTER:
+                        break;
+                    case LEGENDARY:
+                        break;
+                }
+                break;
+            case BADGES:
+                League league = (League) intent.getSerializableExtra(SubMenuActivity.OPTION);
+                switch (league) {
+                    case INDIGO:
+                        break;
+                    case ORANGE:
+                        break;
+                    case JOHTO:
+                        break;
+                    case HOENN:
+                        break;
+                    case SINNOH:
+                        break;
+                    case UNOVA:
+                        break;
+                    case KALOS:
+                        break;
+                }
+                break;
+            case VIDEO_GAMES:
+                PKMGeneration pkmGeneration =
+                        (PKMGeneration) intent.getSerializableExtra(SubMenuActivity.OPTION);
+                Intent videoGameIntent = new Intent(SubSubMenuActivity.this,
+                        VideoGameActivity.class);
+                videoGameIntent.putExtra(VideoGameActivity.GENERATION, pkmGeneration);
+                videoGameIntent.putExtra(OPTION, position);
+                startActivity(videoGameIntent);
+        }
+    }
 }
