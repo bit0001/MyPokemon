@@ -178,6 +178,42 @@ public class VideoGame {
             "Nintendo",
             "March 14, 2010");
 
+    public static final VideoGame BLACK_AND_WHITE = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Black", R.drawable.black);
+                    put("White", R.drawable.white);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Black", "http://www.amazon.com/Pokemon-Black-Version-Nintendo-DS/dp/B004EW2PC6/ref=sr_1_1?ie=UTF8&qid=1460511662&sr=8-1&keywords=pokemon+black");
+                    put("White", "http://www.amazon.com/Pokemon-White-Version-Nintendo-DS/dp/B004EVWYYG/ref=sr_1_1?ie=UTF8&qid=1460511680&sr=8-1&keywords=pokemon+white");
+                }
+            },
+            "Game Freak",
+            "Nintendo DS",
+            "Nintendo",
+            "March 6, 2011");
+
+    public static final VideoGame BLACK2_AND_WHITE2 = new VideoGame(
+            new HashMap<String, Integer>() {
+                {
+                    put("Black 2", R.drawable.black2);
+                    put("White 2", R.drawable.white2);
+                }
+            },
+            new HashMap<String, String>(){
+                {
+                    put("Black 2", "http://www.amazon.com/Pok%C3%A9mon-Black-Version-2-Nintendo-DS/dp/B0050SVNSU/ref=sr_1_1?ie=UTF8&qid=1460511825&sr=8-1&keywords=pokemon+black+2");
+                    put("White 2", "http://www.amazon.com/Pok%C3%A9mon-White-Version-2-Nintendo-DS/dp/B0050SVNP8/ref=sr_1_1?ie=UTF8&qid=1460511838&sr=8-1&keywords=pokemon+white+2");
+                }
+            },
+            "Game Freak",
+            "Nintendo DS",
+            "Nintendo",
+            "October 7, 2012");
+
     private HashMap<String, Integer> coverIds;
     private HashMap<String, String> urls;
     private String platform;
