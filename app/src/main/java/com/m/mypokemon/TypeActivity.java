@@ -75,10 +75,8 @@ public class TypeActivity extends AppCompatActivity {
                 break;
         }
 
-
         TextView name = (TextView) findViewById(R.id.type_name);
         ImageView image = (ImageView) findViewById(R.id.type_image);
-
 
         name.setText(type.getName());
         image.setImageResource(type.getImageId());
