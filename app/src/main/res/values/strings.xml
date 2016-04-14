@@ -254,4 +254,14 @@
     <string name="title_activity_pokemon">PokemonActivity</string>
     <string name="title_activity_video_game">VideoGameActivity</string>
     <string name="title_activity_type">TypeActivity</string>
+    <string name="effect_x2">x2</string>
+    <string name="effect_x1">x1</string>
+    <string name="effect_x1_2">x½</string>
+    <string name="effect_x0">x0</string>
+    <string name="offensive">Offensive</string>
+    <string name="defensive">Defensive</string>
+    <string name="platform">Platform:</string>
+    <string name="developer">Developer:</string>
+    <string name="publisher">Publisher:</string>
+    <string name="release_USA">Release (USA):</string>
 </resources>
