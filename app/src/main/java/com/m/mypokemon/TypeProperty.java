@@ -30,4 +30,9 @@ public class TypeProperty {
     public ArrayList<Type> getSuperEffective() {
         return superEffective;
     }
+
+    public TypeProperty addInefficientType(Type type) {
+        inefficient.add(type);
+        return this;
+    }
 }
