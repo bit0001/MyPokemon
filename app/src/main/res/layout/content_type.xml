@@ -19,6 +19,13 @@
         android:layout_height="wrap_content"
         android:gravity="center"/>
 
+    <ImageView
+        android:id="@+id/type_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
 
 
 </LinearLayout>
