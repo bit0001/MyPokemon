@@ -253,4 +253,5 @@
     </string>
     <string name="title_activity_pokemon">PokemonActivity</string>
     <string name="title_activity_video_game">VideoGameActivity</string>
+    <string name="title_activity_type">TypeActivity</string>
 </resources>
