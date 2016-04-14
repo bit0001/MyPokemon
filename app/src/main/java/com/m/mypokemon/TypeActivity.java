@@ -9,6 +9,8 @@ import android.view.View;
 
 public class TypeActivity extends AppCompatActivity {
 
+    public static final String POKEMON_TYPE = "pokemonType";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
