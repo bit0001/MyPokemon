@@ -64,14 +64,30 @@ public class Type {
     }
 
     private String name;
-    private int photoId;
+    private int imageId;
     private TypeProperty offensive;
     private TypeProperty defensive;
 
-    Type(String name, int photoId, TypeProperty offensive, TypeProperty defensive) {
-        this.photoId = photoId;
+    Type(String name, int imageId, TypeProperty offensive, TypeProperty defensive) {
+        this.imageId = imageId;
         this.name = name;
         this.offensive = offensive;
         this.defensive = defensive;
+    }
+
+    public TypeProperty getDefensive() {
+        return defensive;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public TypeProperty getOffensive() {
+        return offensive;
+    }
+
+    public int getImageId() {
+        return imageId;
     }
 }
