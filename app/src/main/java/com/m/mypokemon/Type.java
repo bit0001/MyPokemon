@@ -1,7 +1,7 @@
 package com.m.mypokemon;
 
 public class Type {
-    public static Type NORMAL = new Type("Normal", R.drawable.normal, new TypeProperty(), new TypeProperty());
+    public static Type NORMAL;
     public static Type FIGHT = new Type("Fight", R.drawable.fight, new TypeProperty(), new TypeProperty());
     public static Type FLYING = new Type("Flying", R.drawable.flying, new TypeProperty(), new TypeProperty());
     public static Type POISON = new Type("Poison", R.drawable.poison, new TypeProperty(), new TypeProperty());
@@ -19,6 +19,49 @@ public class Type {
     public static Type DRAGON = new Type("Dragon", R.drawable.dragon, new TypeProperty(), new TypeProperty());
     public static Type DARK = new Type("Dark", R.drawable.dark, new TypeProperty(), new TypeProperty());
     public static Type FAIRY = new Type("Fairy", R.drawable.fairy, new TypeProperty(), new TypeProperty());
+
+    static {
+        NORMAL = new Type("Normal", R.drawable.normal,
+                new TypeProperty()
+                        .addNormalType(NORMAL)
+                        .addNormalType(FIGHT)
+                        .addNormalType(FLYING)
+                        .addNormalType(POISON)
+                        .addNormalType(GROUND)
+                        .addNotVeryEffectiveType(ROCK)
+                        .addNormalType(BUG)
+                        .addIneffectiveType(GHOST)
+                        .addNotVeryEffectiveType(STEEL)
+                        .addNormalType(FIRE)
+                        .addNormalType(WATER)
+                        .addNormalType(GRASS)
+                        .addNormalType(ELECTRIC)
+                        .addNormalType(PSYCHIC)
+                        .addNormalType(ICE)
+                        .addNormalType(DRAGON)
+                        .addNormalType(DARK)
+                        .addNormalType(FAIRY),
+                new TypeProperty()
+                        .addNormalType(NORMAL)
+                        .addSuperEffectiveType(FIGHT)
+                        .addNormalType(FLYING)
+                        .addNormalType(POISON)
+                        .addNormalType(GROUND)
+                        .addNormalType(ROCK)
+                        .addNormalType(BUG)
+                        .addIneffectiveType(GHOST)
+                        .addNormalType(STEEL)
+                        .addNormalType(FIRE)
+                        .addNormalType(WATER)
+                        .addNormalType(GRASS)
+                        .addNormalType(ELECTRIC)
+                        .addNormalType(PSYCHIC)
+                        .addNormalType(ICE)
+                        .addNormalType(DRAGON)
+                        .addNormalType(DARK)
+                        .addNormalType(FAIRY)
+        );
+    }
 
     private String name;
     private int photoId;
