@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Platform:   "/>
+            android:text="@string/platform"/>
         <TextView
             android:id="@+id/video_game_platform"
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Developer:   "/>
+            android:text="@string/developer"/>
         <TextView
             android:id="@+id/video_game_developer"
             android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Publisher:   "/>
+            android:text="@string/publisher"/>
         <TextView
             android:id="@+id/video_game_publisher"
             android:layout_width="wrap_content"
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:text="Release (USA):   "/>
+            android:text="@string/release_USA"/>
         <TextView
             android:id="@+id/video_game_release"
             android:layout_width="wrap_content"

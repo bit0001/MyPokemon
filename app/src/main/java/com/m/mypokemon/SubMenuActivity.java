@@ -63,6 +63,11 @@ public class SubMenuActivity extends ListActivity {
                         break;
                 }
                 break;
+            case POKEMON_TYPES:
+                Intent typeIntent = new Intent(this, TypeActivity.class);
+                typeIntent.putExtra(TypeActivity.POKEMON_TYPE, PokemonType.values()[position]);
+                startActivity(typeIntent);
+                break;
             case BADGES:
                 League league = League.values()[position];
                 intent.putExtra(OPTION, league);

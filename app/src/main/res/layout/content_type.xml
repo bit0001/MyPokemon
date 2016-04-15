@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.m.mypokemon.TypeActivity"
+    tools:showIn="@layout/activity_type">
+
+    <ImageView
+        android:id="@+id/type_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offensive" />
+
+        <Switch
+            android:id="@+id/type_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:textOff=""
+            android:textOn=""
+            android:onClick="onSwitchClicked"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/defensive"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/super_effective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/effect_x2"
+                android:buttonTint="@color/radio_button"/>
+            <RadioButton
+                android:id="@+id/normally_effective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/effect_x1"
+                android:buttonTint="@color/radio_button"/>
+            <RadioButton
+                android:id="@+id/not_very_effective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/effect_x1_2"
+                android:buttonTint="@color/radio_button"/>
+            <RadioButton
+                android:id="@+id/ineffective"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/effect_x0"
+                android:buttonTint="@color/radio_button"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="None"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <GridView
+        android:id="@+id/grid_of_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:verticalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="gone">
+    </GridView>
+
+
+</LinearLayout>
