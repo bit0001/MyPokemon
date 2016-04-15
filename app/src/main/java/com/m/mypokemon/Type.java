@@ -488,6 +488,45 @@ public class Type {
                 .addNormalType(DRAGON)
                 .addNormalType(DARK)
                 .addNormalType(FAIRY);
+
+        ELECTRIC.offensive
+                .addNormalType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addSuperEffectiveType(FLYING)
+                .addNormalType(POISON)
+                .addIneffectiveType(GROUND)
+                .addNormalType(ROCK)
+                .addNormalType(BUG)
+                .addNormalType(GHOST)
+                .addNormalType(STEEL)
+                .addNormalType(FIRE)
+                .addSuperEffectiveType(WATER)
+                .addNotVeryEffectiveType(GRASS)
+                .addNotVeryEffectiveType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addNormalType(ICE)
+                .addNotVeryEffectiveType(DRAGON)
+                .addNormalType(DARK)
+                .addNormalType(FAIRY);
+        ELECTRIC.defensive
+                .addNormalType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addNotVeryEffectiveType(FLYING)
+                .addNormalType(POISON)
+                .addSuperEffectiveType(GROUND)
+                .addNormalType(ROCK)
+                .addNormalType(BUG)
+                .addNormalType(GHOST)
+                .addNotVeryEffectiveType(STEEL)
+                .addNormalType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNotVeryEffectiveType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addNormalType(ICE)
+                .addNormalType(DRAGON)
+                .addNormalType(DARK)
+                .addNormalType(FAIRY);
     }
 
     private String name;
