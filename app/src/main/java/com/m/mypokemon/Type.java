@@ -2,7 +2,7 @@ package com.m.mypokemon;
 
 public class Type {
     public static Type NORMAL = new Type("Normal", R.drawable.normal, new TypeProperty(), new TypeProperty());
-    public static Type FIGHT = new Type("Fight", R.drawable.fight, new TypeProperty(), new TypeProperty());
+    public static Type FIGHTING = new Type("Fighting", R.drawable.fighting, new TypeProperty(), new TypeProperty());
     public static Type FLYING = new Type("Flying", R.drawable.flying, new TypeProperty(), new TypeProperty());
     public static Type POISON = new Type("Poison", R.drawable.poison, new TypeProperty(), new TypeProperty());
     public static Type GROUND = new Type("Ground", R.drawable.ground, new TypeProperty(), new TypeProperty());
@@ -23,7 +23,7 @@ public class Type {
     static {
         NORMAL.offensive
                 .addNormalType(NORMAL)
-                .addNormalType(FIGHT)
+                .addNormalType(FIGHTING)
                 .addNormalType(FLYING)
                 .addNormalType(POISON)
                 .addNormalType(GROUND)
@@ -42,7 +42,7 @@ public class Type {
                 .addNormalType(FAIRY);
         NORMAL.defensive
                 .addNormalType(NORMAL)
-                .addSuperEffectiveType(FIGHT)
+                .addSuperEffectiveType(FIGHTING)
                 .addNormalType(FLYING)
                 .addNormalType(POISON)
                 .addNormalType(GROUND)
@@ -59,6 +59,45 @@ public class Type {
                 .addNormalType(DRAGON)
                 .addNormalType(DARK)
                 .addNormalType(FAIRY);
+
+        FIGHTING.offensive
+                .addSuperEffectiveType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addNotVeryEffectiveType(FLYING)
+                .addNotVeryEffectiveType(POISON)
+                .addNormalType(GROUND)
+                .addSuperEffectiveType(ROCK)
+                .addNotVeryEffectiveType(BUG)
+                .addIneffectiveType(GHOST)
+                .addSuperEffectiveType(STEEL)
+                .addNormalType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNormalType(ELECTRIC)
+                .addNotVeryEffectiveType(PSYCHIC)
+                .addSuperEffectiveType(ICE)
+                .addNormalType(DRAGON)
+                .addSuperEffectiveType(DARK)
+                .addNotVeryEffectiveType(FAIRY);
+        FIGHTING.defensive
+                .addNormalType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addSuperEffectiveType(FLYING)
+                .addNormalType(POISON)
+                .addNormalType(GROUND)
+                .addNotVeryEffectiveType(ROCK)
+                .addNotVeryEffectiveType(BUG)
+                .addNormalType(GHOST)
+                .addNormalType(STEEL)
+                .addNormalType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNormalType(ELECTRIC)
+                .addSuperEffectiveType(PSYCHIC)
+                .addNormalType(ICE)
+                .addNormalType(DRAGON)
+                .addNotVeryEffectiveType(DARK)
+                .addSuperEffectiveType(FAIRY);
     }
 
     private String name;

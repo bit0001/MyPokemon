@@ -114,8 +114,8 @@ public class TypeActivity extends AppCompatActivity {
             case NORMAL:
                 type = Type.NORMAL;
                 break;
-            case FIGHT:
-                type = Type.FIGHT;
+            case FIGHTING:
+                type = Type.FIGHTING;
                 break;
             case FLYING:
                 type = Type.FLYING;
