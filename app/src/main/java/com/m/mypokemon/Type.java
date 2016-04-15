@@ -683,6 +683,45 @@ public class Type {
                 .addNormalType(DRAGON)
                 .addNotVeryEffectiveType(DARK)
                 .addSuperEffectiveType(FAIRY);
+
+        FAIRY.offensive
+                .addNormalType(NORMAL)
+                .addSuperEffectiveType(FIGHTING)
+                .addNormalType(FLYING)
+                .addNotVeryEffectiveType(POISON)
+                .addNormalType(GROUND)
+                .addNormalType(ROCK)
+                .addNormalType(BUG)
+                .addNormalType(GHOST)
+                .addNotVeryEffectiveType(STEEL)
+                .addNotVeryEffectiveType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNormalType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addNormalType(ICE)
+                .addSuperEffectiveType(DRAGON)
+                .addSuperEffectiveType(DARK)
+                .addNormalType(FAIRY);
+        FAIRY.defensive
+                .addNormalType(NORMAL)
+                .addNotVeryEffectiveType(FIGHTING)
+                .addNormalType(FLYING)
+                .addSuperEffectiveType(POISON)
+                .addNormalType(GROUND)
+                .addNormalType(ROCK)
+                .addNotVeryEffectiveType(BUG)
+                .addNormalType(GHOST)
+                .addSuperEffectiveType(STEEL)
+                .addNormalType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNormalType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addNormalType(ICE)
+                .addIneffectiveType(DRAGON)
+                .addNotVeryEffectiveType(DARK)
+                .addNormalType(FAIRY);
     }
 
     private String name;
