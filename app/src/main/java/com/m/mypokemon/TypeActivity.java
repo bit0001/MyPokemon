@@ -27,12 +27,9 @@ public class TypeActivity extends AppCompatActivity {
         TextView toolbarTitle = (TextView) findViewById(R.id.main_toolbar_title);
         toolbarTitle.setText(type.getName());
 
-        TextView name = (TextView) findViewById(R.id.type_name);
         ImageView image = (ImageView) findViewById(R.id.type_image);
 
-        assert name != null;
         assert image != null;
-        name.setText(type.getName());
         image.setImageResource(type.getImageId());
 
         gridView = (GridView) findViewById(R.id.grid_of_types);
