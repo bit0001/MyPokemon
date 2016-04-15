@@ -26,8 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:paddingRight="30dp"
-        android:paddingLeft="30dp"/>
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -90,14 +90,19 @@
     </LinearLayout>
 
     <GridView
+        android:id="@+id/grid_of_types"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnWidth="75dp"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:verticalSpacing="5dp"
         android:numColumns="auto_fit"
-        android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
-        android:gravity="center">
+        android:gravity="center"
+        android:focusable="true"
+        android:clickable="true">
     </GridView>
 
 
