@@ -3,7 +3,6 @@ package com.m.mypokemon;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -25,14 +24,12 @@ public class TypeActivity extends AppCompatActivity {
         setToobarTitle();
 
         ImageView image = (ImageView) findViewById(R.id.type_image);
-
         assert image != null;
         image.setImageResource(type.getImageId());
 
         gridView = (GridView) findViewById(R.id.grid_of_types);
         typeGridViewAdapter = new TypeGridViewAdapter(this, R.layout.type_item_layout, getData());
         gridView.setAdapter(typeGridViewAdapter);
-
     }
 
     private void setToobarTitle() {
