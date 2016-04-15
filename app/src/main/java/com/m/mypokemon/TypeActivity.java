@@ -23,6 +23,7 @@ public class TypeActivity extends AppCompatActivity {
     private Switch typeSwitch;
     private RadioGroup radioGroup;
     private RadioButton selectedRadioButton;
+    private TextView noTypes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class TypeActivity extends AppCompatActivity {
         ImageView image = (ImageView) findViewById(R.id.type_image);
         assert image != null;
         image.setImageResource(type.getImageId());
+
+        noTypes = (TextView) findViewById(R.id.no_types);
 
         typeSwitch = (Switch) findViewById(R.id.type_switch);
         typeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -93,6 +96,9 @@ public class TypeActivity extends AppCompatActivity {
                 types = typeProperty.getIneffective();
                 break;
         }
+
+        noTypes.setVisibility(types.isEmpty()? View.VISIBLE: View.GONE);
+        gridView.setVisibility(types.isEmpty()? View.GONE: View.VISIBLE);
 
         for (Type anotherType: types) {
             imageItems.add(new ImageItem(anotherType.getName(), anotherType.getImageId()));
