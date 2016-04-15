@@ -16,16 +16,13 @@ public class TypeActivity extends AppCompatActivity {
     public static Type type;
     private GridView gridView;
     private TypeGridViewAdapter typeGridViewAdapter;
-    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_type);
-        Intent intent = getIntent();
-        getPokemonType(PokemonType.values()[intent.getIntExtra(POKEMON_TYPE, -1)]);
-        TextView toolbarTitle = (TextView) findViewById(R.id.main_toolbar_title);
-        toolbarTitle.setText(type.getName());
+        getPokemonType();
+        setToobarTitle();
 
         ImageView image = (ImageView) findViewById(R.id.type_image);
 
@@ -36,6 +33,11 @@ public class TypeActivity extends AppCompatActivity {
         typeGridViewAdapter = new TypeGridViewAdapter(this, R.layout.type_item_layout, getData());
         gridView.setAdapter(typeGridViewAdapter);
 
+    }
+
+    private void setToobarTitle() {
+        TextView toolbarTitle = (TextView) findViewById(R.id.main_toolbar_title);
+        toolbarTitle.setText(type.getName());
     }
 
     private ArrayList<ImageItem> getData() {
@@ -49,7 +51,9 @@ public class TypeActivity extends AppCompatActivity {
         return imageItems;
     }
 
-    private void getPokemonType(PokemonType chosenType) {
+    private void getPokemonType() {
+        Intent intent = getIntent();
+        PokemonType chosenType = PokemonType.values()[intent.getIntExtra(POKEMON_TYPE, -1)];
         switch (chosenType) {
             case NORMAL:
                 type = Type.NORMAL;
