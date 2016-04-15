@@ -605,6 +605,45 @@ public class Type {
                 .addNormalType(DRAGON)
                 .addNormalType(DARK)
                 .addNormalType(FAIRY);
+
+        DRAGON.offensive
+                .addNormalType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addNormalType(FLYING)
+                .addNormalType(POISON)
+                .addNormalType(GROUND)
+                .addNormalType(ROCK)
+                .addNormalType(BUG)
+                .addNormalType(GHOST)
+                .addNotVeryEffectiveType(STEEL)
+                .addNotVeryEffectiveType(FIRE)
+                .addNormalType(WATER)
+                .addNormalType(GRASS)
+                .addNormalType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addNormalType(ICE)
+                .addSuperEffectiveType(DRAGON)
+                .addNormalType(DARK)
+                .addIneffectiveType(FAIRY);
+        DRAGON.defensive
+                .addNormalType(NORMAL)
+                .addNormalType(FIGHTING)
+                .addNormalType(FLYING)
+                .addNormalType(POISON)
+                .addNormalType(GROUND)
+                .addNormalType(ROCK)
+                .addNormalType(BUG)
+                .addNormalType(GHOST)
+                .addNormalType(STEEL)
+                .addNotVeryEffectiveType(FIRE)
+                .addNotVeryEffectiveType(WATER)
+                .addNotVeryEffectiveType(GRASS)
+                .addNotVeryEffectiveType(ELECTRIC)
+                .addNormalType(PSYCHIC)
+                .addSuperEffectiveType(ICE)
+                .addSuperEffectiveType(DRAGON)
+                .addNormalType(DARK)
+                .addSuperEffectiveType(FAIRY);
     }
 
     private String name;
@@ -634,5 +673,5 @@ public class Type {
     public int getImageId() {
         return imageId;
     }
-    
+
 }
