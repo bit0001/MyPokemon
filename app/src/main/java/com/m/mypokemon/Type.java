@@ -1,24 +1,24 @@
 package com.m.mypokemon;
 
 public class Type {
-    public static Type NORMAL = new Type("Normal", R.drawable.normal, new TypeProperty(), new TypeProperty());
-    public static Type FIGHTING = new Type("Fighting", R.drawable.fighting, new TypeProperty(), new TypeProperty());
-    public static Type FLYING = new Type("Flying", R.drawable.flying, new TypeProperty(), new TypeProperty());
-    public static Type POISON = new Type("Poison", R.drawable.poison, new TypeProperty(), new TypeProperty());
-    public static Type GROUND = new Type("Ground", R.drawable.ground, new TypeProperty(), new TypeProperty());
-    public static Type ROCK = new Type("Rock", R.drawable.rock, new TypeProperty(), new TypeProperty());
-    public static Type BUG = new Type("Bug", R.drawable.bug, new TypeProperty(), new TypeProperty());
-    public static Type GHOST = new Type("Ghost", R.drawable.ghost, new TypeProperty(), new TypeProperty());
-    public static Type STEEL = new Type("Steel", R.drawable.steel, new TypeProperty(), new TypeProperty());
-    public static Type FIRE = new Type("Fire", R.drawable.fire, new TypeProperty(), new TypeProperty());
-    public static Type WATER = new Type("Water", R.drawable.water, new TypeProperty(), new TypeProperty());
-    public static Type GRASS = new Type("Grass", R.drawable.grass, new TypeProperty(), new TypeProperty());
-    public static Type ELECTRIC = new Type("Electric", R.drawable.electric, new TypeProperty(), new TypeProperty());
-    public static Type PSYCHIC = new Type("Psychic", R.drawable.psychic, new TypeProperty(), new TypeProperty());
-    public static Type ICE = new Type("Ice", R.drawable.ice, new TypeProperty(), new TypeProperty());
-    public static Type DRAGON = new Type("Dragon", R.drawable.dragon, new TypeProperty(), new TypeProperty());
-    public static Type DARK = new Type("Dark", R.drawable.dark, new TypeProperty(), new TypeProperty());
-    public static Type FAIRY = new Type("Fairy", R.drawable.fairy, new TypeProperty(), new TypeProperty());
+    public static Type NORMAL = new Type("Normal", R.drawable.normal);
+    public static Type FIGHTING = new Type("Fighting", R.drawable.fighting);
+    public static Type FLYING = new Type("Flying", R.drawable.flying);
+    public static Type POISON = new Type("Poison", R.drawable.poison);
+    public static Type GROUND = new Type("Ground", R.drawable.ground);
+    public static Type ROCK = new Type("Rock", R.drawable.rock);
+    public static Type BUG = new Type("Bug", R.drawable.bug);
+    public static Type GHOST = new Type("Ghost", R.drawable.ghost);
+    public static Type STEEL = new Type("Steel", R.drawable.steel);
+    public static Type FIRE = new Type("Fire", R.drawable.fire);
+    public static Type WATER = new Type("Water", R.drawable.water);
+    public static Type GRASS = new Type("Grass", R.drawable.grass);
+    public static Type ELECTRIC = new Type("Electric", R.drawable.electric);
+    public static Type PSYCHIC = new Type("Psychic", R.drawable.psychic);
+    public static Type ICE = new Type("Ice", R.drawable.ice);
+    public static Type DRAGON = new Type("Dragon", R.drawable.dragon);
+    public static Type DARK = new Type("Dark", R.drawable.dark);
+    public static Type FAIRY = new Type("Fairy", R.drawable.fairy);
 
     static {
         NORMAL.offensive
@@ -729,11 +729,11 @@ public class Type {
     private TypeProperty offensive;
     private TypeProperty defensive;
 
-    Type(String name, int imageId, TypeProperty offensive, TypeProperty defensive) {
+    Type(String name, int imageId) {
         this.imageId = imageId;
         this.name = name;
-        this.offensive = offensive;
-        this.defensive = defensive;
+        this.offensive = new TypeProperty();
+        this.defensive = new TypeProperty();
     }
 
     public TypeProperty getDefensive() {
