@@ -3,6 +3,7 @@ package com.m.mypokemon;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ public class TypeActivity extends AppCompatActivity {
     public static Type type;
     private GridView gridView;
     private TypeGridViewAdapter typeGridViewAdapter;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class TypeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_type);
         Intent intent = getIntent();
         getPokemonType(PokemonType.values()[intent.getIntExtra(POKEMON_TYPE, -1)]);
+        TextView toolbarTitle = (TextView) findViewById(R.id.main_toolbar_title);
+        toolbarTitle.setText(type.getName());
 
         TextView name = (TextView) findViewById(R.id.type_name);
         ImageView image = (ImageView) findViewById(R.id.type_image);
