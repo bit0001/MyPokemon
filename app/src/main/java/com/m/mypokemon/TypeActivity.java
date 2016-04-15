@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -35,13 +36,35 @@ public class TypeActivity extends AppCompatActivity {
         image.setImageResource(type.getImageId());
 
         typeSwitch = (Switch) findViewById(R.id.type_switch);
+        typeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                populateTypeGrid();
+            }
+        });
 
         selectedRadioButton = (RadioButton) findViewById(R.id.super_effective);
         selectedRadioButton.setChecked(true);
         radioGroup = (RadioGroup) findViewById(R.id.radio_group);
 
+
+        radioGroup.setOnCheckedChangeListener(
+                new RadioGroup.OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        populateTypeGrid();
+                    }
+                }
+
+        );
+
+        populateTypeGrid();
+
+    }
+
+    private void populateTypeGrid() {
         gridView = (GridView) findViewById(R.id.grid_of_types);
-        typeGridViewAdapter = new TypeGridViewAdapter(this, R.layout.type_item_layout, getData());
+        typeGridViewAdapter = new TypeGridViewAdapter(TypeActivity.this, R.layout.type_item_layout, getData());
         gridView.setAdapter(typeGridViewAdapter);
     }
 
@@ -52,12 +75,26 @@ public class TypeActivity extends AppCompatActivity {
 
     private ArrayList<ImageItem> getData() {
         ArrayList<ImageItem> imageItems = new ArrayList<>();
+        ArrayList<Type> types = null;
         TypeProperty typeProperty =
-                typeSwitch.isChecked()? type.getOffensive(): type.getDefensive();
+                typeSwitch.isChecked()? type.getDefensive(): type.getOffensive();
 
+        switch (radioGroup.getCheckedRadioButtonId()) {
+            case R.id.super_effective:
+                types = typeProperty.getSuperEffective();
+                break;
+            case R.id.normally_effective:
+                types = typeProperty.getNormal();
+                break;
+            case R.id.not_very_effective:
+                types = typeProperty.getNotVeryEffective();
+                break;
+            case R.id.ineffective:
+                types = typeProperty.getIneffective();
+                break;
+        }
 
-
-        for (Type anotherType: new ArrayList<Type>()) {
+        for (Type anotherType: types) {
             imageItems.add(new ImageItem(anotherType.getName(), anotherType.getImageId()));
         }
 

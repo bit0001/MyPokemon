@@ -66,7 +66,7 @@
                 android:text="@string/effect_x2"
                 android:buttonTint="@color/radio_button"/>
             <RadioButton
-                android:id="@+id/normal"
+                android:id="@+id/normally_effective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/effect_x1"
