@@ -2,8 +2,10 @@ package com.m.mypokemon;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.CompoundButton;
 import android.widget.GridView;
 import android.widget.ImageView;
@@ -11,6 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -62,6 +65,20 @@ public class TypeActivity extends AppCompatActivity {
         );
 
         populateTypeGrid();
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ImageItem item = (ImageItem) parent.getItemAtPosition(position);
+                if (!(item.getTitle().toLowerCase().equals(type.getName().toLowerCase()))) {
+                    Intent intent = new Intent(TypeActivity.this, TypeActivity.class);
+                    intent.putExtra(POKEMON_TYPE, PokemonType.getTypeByName(item.getTitle().toLowerCase()));
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(TypeActivity.this, "You are currently in " + type.getName() + " type.",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 
@@ -109,7 +126,7 @@ public class TypeActivity extends AppCompatActivity {
 
     private void getPokemonType() {
         Intent intent = getIntent();
-        PokemonType chosenType = PokemonType.values()[intent.getIntExtra(POKEMON_TYPE, -1)];
+        PokemonType chosenType = (PokemonType) intent.getSerializableExtra(POKEMON_TYPE);
         switch (chosenType) {
             case NORMAL:
                 type = Type.NORMAL;
