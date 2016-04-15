@@ -33,12 +33,13 @@
             android:text="@string/offensive" />
 
         <Switch
-            android:id="@+id/switch_type"
+            android:id="@+id/type_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:switchMinWidth="56dp"
             android:textOff=""
-            android:textOn="" />
+            android:textOn=""
+            android:onClick="onSwitchClicked"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,27 +54,31 @@
         android:gravity="center">
 
         <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center">
             <RadioButton
+                android:id="@+id/super_effective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/effect_x2"
-                android:checked="true"
                 android:buttonTint="@color/radio_button"/>
             <RadioButton
+                android:id="@+id/normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/effect_x1"
                 android:buttonTint="@color/radio_button"/>
             <RadioButton
+                android:id="@+id/not_very_effective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/effect_x1_2"
                 android:buttonTint="@color/radio_button"/>
             <RadioButton
+                android:id="@+id/ineffective"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/effect_x0"
