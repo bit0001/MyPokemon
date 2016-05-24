@@ -41,8 +41,8 @@ public class SubMenuActivity extends ListActivity {
                 break;
         }
 
-        ArrayAdapter<CharSequence> subMenuOptionsArrayAdapter = ArrayAdapter.
-                createFromResource(this, stringArrayId,
+        ArrayAdapter<CharSequence> subMenuOptionsArrayAdapter =
+                ArrayAdapter.createFromResource(this, stringArrayId,
                         android.R.layout.simple_list_item_1);
         subMenuOptions.setAdapter(subMenuOptionsArrayAdapter);
     }

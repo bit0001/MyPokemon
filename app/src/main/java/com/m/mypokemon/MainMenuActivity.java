@@ -12,7 +12,6 @@ public class MainMenuActivity extends AppCompatActivity {
 
     public static final String OPTION = "mainMenuOption";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +22,14 @@ public class MainMenuActivity extends AppCompatActivity {
         AdapterView.OnItemClickListener itemClickListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainMenuActivity.this,
-                        SubMenuActivity.class);
+                Intent intent = new Intent(MainMenuActivity.this, SubMenuActivity.class);
                 intent.putExtra(OPTION, MainMenuOption.values()[position]);
                 startActivity(intent);
             }
         };
 
         ListView listView = (ListView) findViewById(R.id.main_menu_options);
+
         if (listView != null) {
             listView.setOnItemClickListener(itemClickListener);
         }
