@@ -10,7 +10,6 @@ import android.widget.ListView;
 
 import com.m.mypokemon.MainMenuOption;
 import com.m.mypokemon.R;
-import com.m.mypokemon.SubMenuActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
 

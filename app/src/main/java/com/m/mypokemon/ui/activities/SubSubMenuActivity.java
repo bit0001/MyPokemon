@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.activities;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -7,7 +7,12 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.m.mypokemon.ui.activities.MainMenuActivity;
+import com.m.mypokemon.League;
+import com.m.mypokemon.MainMenuOption;
+import com.m.mypokemon.PKMClassification;
+import com.m.mypokemon.PKMGeneration;
+import com.m.mypokemon.R;
+import com.m.mypokemon.VideoGameActivity;
 
 public class SubSubMenuActivity extends ListActivity {
 

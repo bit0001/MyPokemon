@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.m.mypokemon.ui.activities.SubSubMenuActivity;
+
 public class VideoGameActivity extends AppCompatActivity {
 
     public static final String GENERATION = "pokemonGeneration";
