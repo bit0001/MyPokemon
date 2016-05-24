@@ -11,15 +11,15 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.m.mypokemon.FifthGenerationVideoGame;
-import com.m.mypokemon.FirstGenerationVideoGame;
-import com.m.mypokemon.FourthGenerationVideoGame;
-import com.m.mypokemon.PKMGeneration;
+import com.m.mypokemon.models.video_game_generation.FifthGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.FirstGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.FourthGenerationVideoGame;
+import com.m.mypokemon.models.PKMGeneration;
 import com.m.mypokemon.R;
-import com.m.mypokemon.SecondGenerationVideoGame;
-import com.m.mypokemon.SeventhGenerationVideoGame;
-import com.m.mypokemon.SixthGenerationVideoGame;
-import com.m.mypokemon.ThirdGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.SecondGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.SeventhGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.SixthGenerationVideoGame;
+import com.m.mypokemon.models.video_game_generation.ThirdGenerationVideoGame;
 import com.m.mypokemon.models.VideoGame;
 
 public class VideoGameActivity extends AppCompatActivity {

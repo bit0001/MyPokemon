@@ -7,10 +7,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.m.mypokemon.League;
-import com.m.mypokemon.MainMenuOption;
-import com.m.mypokemon.PKMClassification;
-import com.m.mypokemon.PKMGeneration;
+import com.m.mypokemon.models.League;
+import com.m.mypokemon.models.MainMenuOption;
+import com.m.mypokemon.models.PKMClassification;
+import com.m.mypokemon.models.PKMGeneration;
 import com.m.mypokemon.helpers.PokemonType;
 import com.m.mypokemon.R;
 

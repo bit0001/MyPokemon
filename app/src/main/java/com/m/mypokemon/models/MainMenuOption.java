@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.models;
 
 public enum MainMenuOption {
     POKEMON, POKEMON_TYPES, POKE_BALLS, REGIONS, BADGES, VIDEO_GAMES

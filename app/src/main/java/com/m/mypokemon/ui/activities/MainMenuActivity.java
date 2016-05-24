@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.m.mypokemon.MainMenuOption;
+import com.m.mypokemon.models.MainMenuOption;
 import com.m.mypokemon.R;
 
 public class MainMenuActivity extends AppCompatActivity {
