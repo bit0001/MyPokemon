@@ -1,6 +1,6 @@
-package com.m.mypokemon;
+package com.m.mypokemon.models;
 
-import android.provider.MediaStore;
+import com.m.mypokemon.R;
 
 import java.util.HashMap;
 

@@ -20,8 +20,7 @@ import com.m.mypokemon.SecondGenerationVideoGame;
 import com.m.mypokemon.SeventhGenerationVideoGame;
 import com.m.mypokemon.SixthGenerationVideoGame;
 import com.m.mypokemon.ThirdGenerationVideoGame;
-import com.m.mypokemon.VideoGame;
-import com.m.mypokemon.ui.activities.SubSubMenuActivity;
+import com.m.mypokemon.models.VideoGame;
 
 public class VideoGameActivity extends AppCompatActivity {
 

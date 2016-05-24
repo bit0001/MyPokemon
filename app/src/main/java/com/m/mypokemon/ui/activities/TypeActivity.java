@@ -17,9 +17,9 @@ import android.widget.Toast;
 import com.m.mypokemon.ImageItem;
 import com.m.mypokemon.PokemonType;
 import com.m.mypokemon.R;
-import com.m.mypokemon.Type;
+import com.m.mypokemon.models.Type;
 import com.m.mypokemon.ui.adapters.TypeGridViewAdapter;
-import com.m.mypokemon.TypeProperty;
+import com.m.mypokemon.models.TypeProperty;
 
 import java.util.ArrayList;
 

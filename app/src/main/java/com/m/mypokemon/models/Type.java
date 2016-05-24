@@ -1,4 +1,6 @@
-package com.m.mypokemon;
+package com.m.mypokemon.models;
+
+import com.m.mypokemon.R;
 
 public class Type {
     public static Type NORMAL = new Type("Normal", R.drawable.normal);
