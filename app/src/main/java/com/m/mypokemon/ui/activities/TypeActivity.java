@@ -18,7 +18,7 @@ import com.m.mypokemon.ImageItem;
 import com.m.mypokemon.PokemonType;
 import com.m.mypokemon.R;
 import com.m.mypokemon.Type;
-import com.m.mypokemon.TypeGridViewAdapter;
+import com.m.mypokemon.ui.adapters.TypeGridViewAdapter;
 import com.m.mypokemon.TypeProperty;
 
 import java.util.ArrayList;

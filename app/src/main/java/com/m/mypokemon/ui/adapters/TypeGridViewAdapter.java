@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.m.mypokemon.ImageItem;
+import com.m.mypokemon.R;
 
 import java.util.ArrayList;
 
@@ -26,7 +29,7 @@ public class TypeGridViewAdapter extends ArrayAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
-        ViewHolder holder = null;
+        ViewHolder holder;
 
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
