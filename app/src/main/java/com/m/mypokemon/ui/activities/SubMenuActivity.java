@@ -13,7 +13,6 @@ import com.m.mypokemon.PKMClassification;
 import com.m.mypokemon.PKMGeneration;
 import com.m.mypokemon.PokemonType;
 import com.m.mypokemon.R;
-import com.m.mypokemon.TypeActivity;
 
 public class SubMenuActivity extends ListActivity {
 

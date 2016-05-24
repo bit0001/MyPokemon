@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,6 +11,16 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.m.mypokemon.FifthGenerationVideoGame;
+import com.m.mypokemon.FirstGenerationVideoGame;
+import com.m.mypokemon.FourthGenerationVideoGame;
+import com.m.mypokemon.PKMGeneration;
+import com.m.mypokemon.R;
+import com.m.mypokemon.SecondGenerationVideoGame;
+import com.m.mypokemon.SeventhGenerationVideoGame;
+import com.m.mypokemon.SixthGenerationVideoGame;
+import com.m.mypokemon.ThirdGenerationVideoGame;
+import com.m.mypokemon.VideoGame;
 import com.m.mypokemon.ui.activities.SubSubMenuActivity;
 
 public class VideoGameActivity extends AppCompatActivity {

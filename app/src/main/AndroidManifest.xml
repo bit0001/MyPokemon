@@ -20,16 +20,16 @@
         </activity>
         <activity android:name=".ui.activities.SubMenuActivity" />
         <activity
-            android:name=".PokemonActivity"
+            android:name=".ui.activities.PokemonActivity"
             android:label="@string/title_activity_pokemon"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.SubSubMenuActivity" />
         <activity
-            android:name=".VideoGameActivity"
+            android:name=".ui.activities.VideoGameActivity"
             android:label="@string/title_activity_video_game"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TypeActivity"
+            android:name=".ui.activities.TypeActivity"
             android:label="@string/title_activity_type"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>

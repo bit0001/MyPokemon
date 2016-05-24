@@ -12,7 +12,6 @@ import com.m.mypokemon.MainMenuOption;
 import com.m.mypokemon.PKMClassification;
 import com.m.mypokemon.PKMGeneration;
 import com.m.mypokemon.R;
-import com.m.mypokemon.VideoGameActivity;
 
 public class SubSubMenuActivity extends ListActivity {
 

@@ -1,8 +1,7 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,6 +13,13 @@ import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.m.mypokemon.ImageItem;
+import com.m.mypokemon.PokemonType;
+import com.m.mypokemon.R;
+import com.m.mypokemon.Type;
+import com.m.mypokemon.TypeGridViewAdapter;
+import com.m.mypokemon.TypeProperty;
 
 import java.util.ArrayList;
 
