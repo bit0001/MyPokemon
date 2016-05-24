@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.helpers;
 
 public enum PokemonType {
     NORMAL, FIGHTING, FLYING, POISON, GROUND, ROCK, BUG, GHOST, STEEL, FIRE, WATER, GRASS, ELECTRIC,
