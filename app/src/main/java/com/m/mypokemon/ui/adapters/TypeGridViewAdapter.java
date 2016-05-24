@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.m.mypokemon.ImageItem;
+import com.m.mypokemon.ui.views.ImageItem;
 import com.m.mypokemon.R;
 
 import java.util.ArrayList;

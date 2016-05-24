@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.views;
 
 public class ImageItem {
 

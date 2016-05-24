@@ -14,7 +14,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.m.mypokemon.ImageItem;
+import com.m.mypokemon.ui.views.ImageItem;
 import com.m.mypokemon.PokemonType;
 import com.m.mypokemon.R;
 import com.m.mypokemon.models.Type;
