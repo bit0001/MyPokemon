@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.m.mypokemon.ui.activities.MainMenuActivity;
+
 public class SubMenuActivity extends ListActivity {
 
     public static final String OPTION = "subMenuOption";

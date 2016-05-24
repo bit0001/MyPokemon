@@ -1,4 +1,4 @@
-package com.m.mypokemon;
+package com.m.mypokemon.ui.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.m.mypokemon.MainMenuOption;
+import com.m.mypokemon.R;
+import com.m.mypokemon.SubMenuActivity;
 
 public class MainMenuActivity extends AppCompatActivity {
 
