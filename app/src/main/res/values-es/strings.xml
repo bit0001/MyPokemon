@@ -40,34 +40,6 @@
         <item>Siniestro</item>
         <item>Hada</item>
     </string-array>
-    <string-array name="poke_ball_types">
-        <item>Poké Ball</item>
-        <item>Great Ball</item>
-        <item>Ultra Ball</item>
-        <item>Master Ball</item>
-        <item>Safari Ball</item>
-        <item>Nivel Ball</item>
-        <item>Cebo Ball</item>
-        <item>Luna Ball</item>
-        <item>Amigo Ball</item>
-        <item>Amor Ball</item>
-        <item>Peso Ball</item>
-        <item>Rapid Ball</item>
-        <item>Competi Ball</item>
-        <item>Honor Ball</item>
-        <item>Acopio Ball</item>
-        <item>Turno Ball</item>
-        <item>Nido Ball</item>
-        <item>Malla Ball</item>
-        <item>Buceo Ball</item>
-        <item>Lujo Ball</item>
-        <item>Sana Ball</item>
-        <item>Veloz Ball</item>
-        <item>Ocaso Ball</item>
-        <item>Gloria Ball</item>
-        <item>Parque Ball</item>
-        <item>Ensueño Ball</item>
-    </string-array>
     <string-array name="leagues">
         <item>Liga Indigo</item>
         <item>Liga Naranja</item>
