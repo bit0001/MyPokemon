@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="first_generation">
+        <item>Pokémon Red and Blue</item>
+        <item>Pokémon Yellow</item>
+    </string-array>
+    <string-array name="second_generation">
+        <item>Pokémon Gold and Silver</item>
+        <item>Pokémon Crystal</item>
+    </string-array>
+    <string-array name="third_generation">
+        <item>Pokémon Ruby and Sapphire</item>
+        <item>Pokémon FireRed and LeafGreen</item>
+        <item>Pokémon Emerald</item>
+    </string-array>
+    <string-array name="forth_generation">
+        <item>Pokémon Diamond and Pearl</item>
+        <item>Pokémon Platinum</item>
+        <item>Pokémon HeartGold and SoulSilver</item>
+    </string-array>
+    <string-array name="fifth_generation">
+        <item>Pokémon Black and White</item>
+        <item>Pokémon Black 2 and White 2</item>
+    </string-array>
+    <string-array name="sixth_generation">
+        <item>Pokémon X and Y</item>
+        <item>Pokémon Omega Ruby and Alpha Sapphire</item>
+    </string-array>
+    <string-array name="seventh_generation">
+        <item>Pokémon Sun and Moon</item>
+    </string-array>
+</resources>
