@@ -11,7 +11,7 @@ import com.m.mypokemon.models.League;
 import com.m.mypokemon.models.MainMenuOption;
 import com.m.mypokemon.models.PKMClassification;
 import com.m.mypokemon.models.PKMGeneration;
-import com.m.mypokemon.helpers.PokemonType;
+import com.m.mypokemon.util.PokemonType;
 import com.m.mypokemon.R;
 
 public class SubMenuActivity extends ListActivity {

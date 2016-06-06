@@ -15,7 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.m.mypokemon.ui.views.ImageItem;
-import com.m.mypokemon.helpers.PokemonType;
+import com.m.mypokemon.util.PokemonType;
 import com.m.mypokemon.R;
 import com.m.mypokemon.models.Type;
 import com.m.mypokemon.ui.adapters.TypeGridViewAdapter;
