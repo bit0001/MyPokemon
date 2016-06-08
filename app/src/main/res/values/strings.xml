@@ -97,4 +97,7 @@
     <string name="developer">Developer:</string>
     <string name="publisher">Publisher:</string>
     <string name="release_USA">Release (USA):</string>
+    <string name="password">Password:</string>
+    <string name="log_in">Log In</string>
+    <string name="username">Username:</string>
 </resources>
